@@ -1,0 +1,22 @@
+ol.crumbs {
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding-left: 0;
+	li {
+		font-size: 12px;
+		display: inline-block;
+		color: $color--666666;
+		&:after {
+			content: " ＞ ";
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+	li:last-child {
+		&:after {
+			content: "";
+		}
+	}
+}

@@ -1,0 +1,254 @@
+.profileHeader {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 56px;
+	.profileHeaderImg {
+		display: inline-block;
+		margin-right: 20px;
+		img {
+			width: 72px;
+			height: 72px;
+			border-radius: 50%;
+		}
+	}
+
+	
+
+	.profileHeaderInfo {
+		display: inline-block;
+		vertical-align: top;
+		h1.profileHeaderName {
+			font-size: 24px;
+			letter-spacing: 0.2px;
+			color: #242424;
+		}
+
+		h2.profileHeaderAddr {
+			font-size: 14px;
+			letter-spacing: 0.2px;
+			color: #666666;
+			margin-top: 7px;
+		}
+	}
+
+	.profileHeaderBadge {
+		margin-top: 12px;
+		.icon {
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+		}
+	}
+
+	.profileHeaderRight {
+		text-align: right;
+	}
+
+	.profileHeaderViolationModal {
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		margin-top: 4px;
+		padding-right: 2px;
+		.profileHeaderViolationModalContent {
+			width: 4px;
+			height: 4px;
+			background-color: #dddddd;
+			display: inline-block;
+			position: relative;
+			border-radius: 50%;
+			&:before {
+				content: ' ';
+				width: 4px;
+				height: 4px;
+				background-color: #dddddd;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: -10px;
+				border-radius: 50%;
+			}
+			&:after {
+				content: ' ';
+				width: 4px;
+				height: 4px;
+				background-color: #dddddd;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: -20px;
+				border-radius: 50%;
+			}
+		}
+		&:hover {
+			.profileHeaderViolationModalContent {
+				background-color: #242424;
+				&:before {
+					background-color: #242424;
+				}
+				&:after {
+					background-color: #242424;
+				}
+			}
+		}
+	}
+
+	.profileHeaderFollow {
+		display: flex;
+		align-items: center;
+		margin-top: 16px;
+	}
+
+	.profileHeaderNumberFollow {
+		font-size: 14px;
+		line-height: 1.57;
+		letter-spacing: 0.2px;
+		color: #666666;
+		margin-right: 20px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.articleBody {
+	p {
+		font-size: 17px;
+		line-height: 1.76;
+		letter-spacing: 0.2px;
+		color: #242424;
+		margin-top: 20px;
+	}
+}
+
+h3.numberPeopleFollow {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	color: #242424;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.peopleFollow {
+	margin-bottom: 40px;
+	a:first-child {
+		&:hover {
+			.peopleFollowItemContentImg {
+				img {
+					opacity: 0.7;
+				}
+			}
+			.peopleFollowItemContentName {
+				text-decoration: underline;
+			}
+		}
+	}
+	.peopleFollowItem {
+		padding: 11px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #eeeeee;
+		.peopleFollowItemContent {
+			display: flex;
+			align-items: center;
+		}
+		.peopleFollowItemContentName {
+			font-size: 17px;
+			letter-spacing: 0.2px;
+			color: #242424;
+			.icon {
+				width: 14px;
+				height: 14px;
+				background-size: 100%;
+				margin-left: -2px;
+			}
+			.icon:first-child {
+				margin-left: 8px;
+			}
+			.badge {
+				z-index: 6;
+				position: relative; 
+			}
+			.badgeA {
+				z-index: 5;
+				position: relative; 
+			}
+			.badgeB {
+				z-index: 4;
+				position: relative; 
+			}
+			.badgeC {
+				z-index: 3;
+				position: relative; 
+			}
+			.badgeD {
+				z-index: 2;
+				position: relative; 
+			}
+			.badgeE {
+				z-index: 1;
+				position: relative; 
+			}
+		}
+		.peopleFollowItemContentAddr {
+			font-size: 14px;
+			letter-spacing: 0.2px;
+			color: #666666;
+			margin-top: 8px;
+		}
+		.peopleFollowItemContentImg {
+			display: inline-block;
+			width: 48px;
+			height: 48px;
+			margin-right: 12px;
+			img {
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+		.peopleFollowItemContentInfo {
+			display: inline-block;
+		}
+	}
+	
+}
+
+.popupReportContent {
+	text-align: center;
+	p {
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+	a {
+		width: 240px;
+		height: 40px;
+		border-radius: 2px;
+		border: 1px solid #006eaf;
+		background-color: #ffffff;
+		box-sizing: border-box;
+		font-size: 15px;
+		line-height: 1.33;
+		letter-spacing: 0.4px;
+		text-align: center;
+		color: #006eaf;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 30px auto 10px auto;
+		&:hover {
+			border: 2px solid #006eaf;
+		}
+	}
+}
+
+.simple-popup-content {
+	border-radius: 4px;
+	.close {
+		top: -34px;
+	}
+	
+}

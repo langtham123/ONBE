@@ -1,0 +1,25 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/swiper.min.css', rel='stylesheet')
+block lib_js
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/swiper.min.js')
+
+block title
+	title 101_TOP PC 緊急お知らせ表示
+
+block burgerMenu
+	include ../shared/burger_menu/_menu_01
+
+block content
+	include ../shared/101_contents/_list_keywords
+	article.centerArticle
+		.articleList
+			include ../shared/101_contents/_premium_text_ad_center_2
+			include ../shared/101_contents/_important_notice_center
+			include ../shared/101_contents/_pr_center
+			include ../shared/101_contents/_list_article_center
+
+	include ../shared/_aside_left_3
+	include ../shared/_aside_right_3

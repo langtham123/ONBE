@@ -1,0 +1,22 @@
+- var items = []
+- items.push({img:'../../images/onb/2019/Oval17.png',class:'justIn',title:'ニューヨーク支局',subTitle:'JUST IN',description:'速報テキストが入ります。速報テキストが入ります。速報テキストが入ります。'})
+- items.push({img:'../../images/onb/2019/Oval16.png',class:'',title:'ロンドン支局',subTitle:'1時間前',description:'速報テキストが入ります。速報テキストが入ります。速報テキストが入ります。'})
+- items.push({img:'../../images/onb/2019/Oval15.png',class:'',title:'シリコンバレー支局',subTitle:'1時間前',description:'速報テキストが入ります。速報テキストが入ります。速報テキストが入ります。'})
+- items.push({img:'../../images/onb/2019/Oval14.png',class:'',title:'バンコク支局',subTitle:'1時間前',description:'速報テキストが入ります。速報テキストが入ります。速報テキストが入ります。'})
+- items.push({img:'../../images/onb/2019/Oval13.png',class:'',title:'上海支局',subTitle:'1時間前',description:'速報テキストが入ります。速報テキストが入ります。速報テキストが入ります。'})
+
+.globalNews
+	p.title グローバルニュース
+	p.subTitle 海外支局からの経済界速報
+	ul.globalNewsList
+		for item in items
+			li
+				a(href='#',class=item.class)
+					.globalNewsWrapper
+						.globalNewsLeft
+							.avatarCicrle.sizeForty
+								img(src=item.img,alt='')
+						.globalNewsRight
+							p.itemTitle=item.title
+							p.subItemTitle=item.subTitle
+					p.itemDescription=item.description

@@ -1,0 +1,13 @@
+doctype html
+html(lang='ja')
+	include header.jade
+	body
+		#wrapper
+			include body_header/_body_global_navi
+			include body_header/_body_header
+			.content
+				block content
+		include footer.jade
+		script(src='../../js/bpcommon/jquery-3.x-min.js')
+		block lib_js
+		script(src='../../js/onb/2019/common.js')

@@ -1,0 +1,40 @@
+#wrapper > header {
+	border-bottom: 1px solid #eeeeee;
+}
+header {
+	.headerTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 56px;
+	}
+	.siteLogo {
+		display: inline-block;
+		a:hover {
+			opacity: 0.4;
+		}
+		img {
+			width: 93px;
+			height: 18px;
+		}
+	}
+
+	.userSetting a{
+		display: inline-block;
+		width: 56px;
+		height: 24px;
+		border-radius: 2px;
+		border: 1px solid #eeeeee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		letter-spacing: 0.3px;
+		color: #006eaf;
+		box-sizing: border-box;
+		&:hover {
+			border: 2px solid #eeeeee;
+			text-decoration: underline;
+		}
+	}
+}

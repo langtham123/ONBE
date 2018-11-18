@@ -1,0 +1,39 @@
+- var items = []
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w',description:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w',description:'AI関連なのであとで読む。'})
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w',description:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',is_form:1})
+
+for item in items
+    li.clip
+        .itemleft
+            p.date= item.date
+            if item.is_form
+                a(href="#")
+                    p.parentTitle= item.parentTitle
+                    p.title= item.title
+                    p.description(style='display:none')= item.description
+                a.itemEdit(href='#',style='display:none') メモを編集
+                a.itemDelete(href='#',style='display:none') メモを削除
+                form.frmItemEditNote(style='display:block')
+                    textarea(autofocus)= item.description
+                    button.itemDecision 決定
+                    button.itemCancel キャンセル
+            else
+                a(href="#")
+                    p.parentTitle= item.parentTitle
+                    p.title= item.title
+                    p.description= item.description
+                a.itemEdit(href='#') メモを編集
+                a.itemDelete(href='#') メモを削除
+                form.frmItemEditNote(style='display:none')
+                    textarea= item.description
+                    button.itemDecision 決定
+                    button.itemCancel キャンセル
+
+
+        .itemRight
+            a.itemClose(href='#')
+                i.icon.incon_close_20x20
+                | 削除
+            a.imgLink(href='#')
+                img(src='../../images/onb/2019/Rectangle_3.png', alt='')

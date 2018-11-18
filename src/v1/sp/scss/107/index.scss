@@ -1,0 +1,256 @@
+.profileHeader {
+	justify-content: space-between;
+	margin-top: 32px;
+	.profileHeaderImg {
+		display: inline-block;
+		margin-right: 20px;
+		img {
+			width: 72px;
+			height: 72px;
+			border-radius: 50%;
+		}
+	}
+
+	
+
+	.profileHeaderInfo {
+		display: inline-block;
+		vertical-align: top;
+		h1.profileHeaderName {
+			font-size: 20px;
+			letter-spacing: 0.2px;
+			color: #242424;
+		}
+
+		h2.profileHeaderAddr {
+			font-size: 12px;
+			letter-spacing: 0.2px;
+			color: #666666;
+			margin-top: 7px;
+		}
+	}
+
+	.profileHeaderBadge {
+		margin-top: 8px;
+		.icon {
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+		}
+	}
+
+	.profileHeaderRight {
+
+	}
+
+	.profileHeaderViolationModal {
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		margin-top: 4px;
+		padding-right: 2px;
+	    vertical-align: top;
+		float: right;
+		margin-right: 1px;
+		.profileHeaderViolationModalContent {
+			width: 4px;
+			height: 4px;
+			background-color: #dddddd;
+			display: inline-block;
+			position: relative;
+			border-radius: 50%;
+			&:before {
+				content: ' ';
+				width: 4px;
+				height: 4px;
+				background-color: #dddddd;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 10px;
+				border-radius: 50%;
+			}
+			&:after {
+				content: ' ';
+				width: 4px;
+				height: 4px;
+				background-color: #dddddd;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 20px;
+				border-radius: 50%;
+			}
+		}
+		&:hover {
+			.profileHeaderViolationModalContent {
+				background-color: #242424;
+				&:before {
+					background-color: #242424;
+				}
+				&:after {
+					background-color: #242424;
+				}
+			}
+		}
+	}
+
+	.profileHeaderFollow {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 22px;
+	}
+
+	.profileHeaderNumberFollow {
+		font-size: 12px;
+		letter-spacing: 0.2px;
+		color: #666666;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.articleBody {
+	p {
+		font-size: 17px;
+		line-height: 1.76;
+		letter-spacing: 0.2px;
+		color: #242424;
+		margin-top: 20px;
+	}
+}
+
+h3.numberPeopleFollow {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	color: #242424;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+.peopleFollow {
+	margin-bottom: 40px;
+	a:first-child {
+		&:hover {
+			.peopleFollowItemContentImg {
+				img {
+					opacity: 0.7;
+				}
+			}
+			.peopleFollowItemContentName {
+				text-decoration: underline;
+			}
+		}
+	}
+	.peopleFollowItem {
+		padding: 12px 0;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 2px solid #eeeeee;
+		.btnFollow, .btnFollowing {
+			margin-left: 48px;
+			margin-top: 9px;
+		}
+		.peopleFollowItemContent {
+			display: flex;
+			align-items: center;
+		}
+		.peopleFollowItemContentName {
+			font-size: 15px;
+			letter-spacing: 0.2px;
+			color: #242424;
+			.icon {
+				width: 14px;
+				height: 14px;
+				background-size: 100%;
+				margin-left: -2px;
+				top: 1px;
+			}
+			.icon:first-child {
+				margin-left: 8px;
+			}
+			.badge {
+				z-index: 6;
+				position: relative; 
+			}
+			.badgeA {
+				z-index: 5;
+				position: relative; 
+			}
+			.badgeB {
+				z-index: 4;
+				position: relative; 
+			}
+			.badgeC {
+				z-index: 3;
+				position: relative; 
+			}
+			.badgeD {
+				z-index: 2;
+				position: relative; 
+			}
+			.badgeE {
+				z-index: 1;
+				position: relative; 
+			}
+		}
+		.peopleFollowItemContentAddr {
+			font-size: 12px;
+			letter-spacing: 0.2px;
+			color: #666666;
+			margin-top: 8px;
+		}
+		.peopleFollowItemContentImg {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+			img {
+				width: 100%;
+				border-radius: 50%;
+			}
+		}
+		.peopleFollowItemContentInfo {
+			display: inline-block;
+		}
+	}
+	
+}
+
+.popupReportContent {
+	text-align: center;
+	background-color: #FFF;
+	padding: 20px 0;
+    border-radius: 4px;
+	p {
+		font-size: 15px;
+		font-weight: bold;
+		margin-top: 10px;
+		line-height: 1.67;
+  		letter-spacing: 0.2px;
+	}
+	a {
+		width: 160px;
+  		height: 32px;
+		border-radius: 2px;
+		border: 1px solid #006eaf;
+		background-color: #ffffff;
+		box-sizing: border-box;
+		font-size: 15px;
+		line-height: 1.33;
+		letter-spacing: 0.4px;
+		text-align: center;
+		color: #006eaf;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20px auto 10px auto;
+		&:hover {
+			border: 2px solid #006eaf;
+		}
+	}
+}

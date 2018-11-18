@@ -1,0 +1,15 @@
+section.magazine
+    - var title = '雑誌バックナンバー'
+        include ../../shared/component/_title_box
+
+    ul.magazineList
+        - for (var i = 0; i < 6; ++i)
+            li
+                a(href='#')
+                    img(src='../../images/onb/2019/Rectangle4.png',alt='')
+                    p.date 2018年8月27日号
+                    p.title 三菱重工　巨艦はこうして蘇った
+                a.btnSeemore
+                    i.icon.viewerIcon
+                    span 誌面ビューアーで読む
+    a.newArticleList もっと見る &gt;

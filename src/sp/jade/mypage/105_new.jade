@@ -1,0 +1,27 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/owl.carousel.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick-theme.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/owl.carousel.min.js')
+	script(src='../../js/onb/2019/lib/slick.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 105_BPCMSからの新着情報
+
+
+block content
+	article
+		include ../shared/105_contents/_header_105
+		.articleList
+			section.myPage
+				include ../shared/105_contents/_list_1
+	include ../shared/leaf_content/popup/_pop_up_104

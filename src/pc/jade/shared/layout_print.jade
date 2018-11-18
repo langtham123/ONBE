@@ -1,0 +1,19 @@
+doctype html
+html(lang='ja')
+	include header.jade
+	body
+		header.headerPrint
+			.headerBlock
+				.siteLogo
+					a(href='/')
+						img(src='../../images/onb/2019/logo_header_print.png', alt='')
+		.content
+			block content
+		footer.footerPrint
+			.mainFooterContainer
+				.corpLogo
+					img(src='../../images/onb/2019/print_footer.png', alt='')
+				p Copyright © Nikkei Business Publications, Inc. All Rights Reserved.
+		script(src='../../js/bpcommon/jquery-3.x-min.js')
+		block lib_js
+		script(src='../../js/onb/2019/common.js')

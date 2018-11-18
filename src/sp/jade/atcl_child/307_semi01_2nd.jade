@@ -1,0 +1,67 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/owl.carousel.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick-theme.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/owl.carousel.min.js')
+	script(src='../../js/onb/2019/lib/slick.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンク
+
+block content
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/307/_header_307_2nd
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/307/_description_text_307
+				
+				include ../shared/leaf_content/307/_main_text_fade_2nd
+				include ../shared/leaf_content/307/_read_more_login_307
+				include ../shared/leaf_content/_leaf_tag
+			section.panelIndent
+					include ../shared/leaf_content/_comment
+			section.panelIndent
+					include ../shared/leaf_content/307/_progress_bar_307
+			
+			section
+				include ../shared/component/307/_serial_box_307
+			- var img_name = 'ADRectangle.png'
+			include ../shared/component/_ad_rectangle
+			
+			section.panelIndent
+				- var title = 'あなたにオススメ'
+				include ../shared/component/_title_box
+				include ../shared/component/_recommend_article
+			
+			section
+				.panelIndent
+					- var title = '雑誌バックナンバー'
+					include ../shared/component/_title_box
+			section.slickList
+				include ../shared/leaf_content/slider/_slick_list
+				.panelIndent
+					- var url = '#', text = 'バックナンバー'
+					include ../shared/component/_other_link
+			hr.devide
+			section.panelIndent
+				include ../shared/component/_business_trend
+				- var url = '#', text = 'ビジネストレンド一覧s'
+				include ../shared/component/_other_link
+
+
+
+
+	include ../shared/leaf_content/popup/_pop_up_05
+	include ../shared/leaf_content/popup/_pop_up_06
+	include ../shared/leaf_content/popup/_pop_up_07

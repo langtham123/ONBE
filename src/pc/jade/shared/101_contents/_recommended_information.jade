@@ -1,0 +1,40 @@
+- var prItems = []
+- prItems.push({category:'日本マイクロソフト',title:'開発環境こそ、創造力の源泉だと教える'})
+- prItems.push({category:'ビズリーチ',title:'第４回・「複合現実」で建設業を変える旗振り役'})
+- prItems.push({category:'アウディジャパン',title:'新型アウディA7で味わう【アウディオンデマンド】'})
+- prItems.push({category:'パーソルキャリア',title:'早稲田大学の創始者、大隈重信の年収はいくら？'})
+- prItems.push({category:'Sansan',title:'従来型組織はもう不要？『ティール組織』を志向した組織をつくる方法とは？'})
+- prItems.push({category:'連載タイトル',title:'人材採用大変革時代の「採用戦略」とは？'})
+- prItems.push({category:'連載タイトル',title:'負け癖がついている社員たちを蘇らせる方法'})
+- prItems.push({category:'連載タイトル',title:'働き方改革を実現させるための有効策とは？'})
+- prItems.push({category:'SATORI',title:'たった５問でズバリ診断！あなたのデジタル・マーケティング理解度は？'})
+- prItems.push({category:'日経ビジネスONLINE Special',title:'挫折と失敗から始まったストーリー'})
+section.recommendesInfomation
+    - var title = 'おすすめ情報'
+        include ../../shared/component/_title_box
+
+    ul.recommendesInfomationList
+        - for (var i = 0; i < 6; ++i)
+            li
+                a(href='#')
+                    .left
+                        p.category 親記事タイトル親記事タイトル22w
+                        p.itemtile タイトルが入ります。タイトルが入ります。タイトルが入ります。ああ
+                    .right
+                        img(src='../../images/onb/2019/img19.png',alt='')
+    .adbox
+        p.adTitle ビジネスリーダーに行動の指針を。
+            br
+            | 信頼できるNo.1経済・経営情報誌「日経ビジネス」
+        img(src='../../images/onb/2019/Group_30.png',alt='')
+        a.btnApplication(href='#') 購読お申し込み
+    .prBox
+        p.prHeadTitle ビジネストレンド [PR]
+
+        ul.prListArticle
+            for item in prItems
+                li
+                    a(href='#')
+                        p.category=item.category
+                        p.itemTitle=item.title
+        a.newArticleList ビジネストレンド一覧 &gt;

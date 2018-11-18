@@ -1,0 +1,83 @@
+extends ../shared/layout_blank.jade
+
+block lib_css
+
+block lib_js
+
+block title
+	title part UI
+
+block content
+	article.partThemeUi
+		.titleThemePage
+			h2 フォローボタン
+		.panelIndent
+			p.titleNotice フォロー前
+			- var text = '著者をフォロー';
+			include ../shared/component/_article_follow
+			- var text = '連載をフォロー';
+			include ../shared/component/_article_follow
+			- var text = '講座をフォロー';
+			include ../shared/component/_article_follow
+			- var text = 'シリーズをフォロー';
+			include ../shared/component/_article_follow
+			p.titleNotice フォロー前
+			- var text = '著者フォロー中';
+			include ../shared/component/_article_unfollow
+			- var text = '連載フォロー中';
+			include ../shared/component/_article_unfollow
+			- var text = '講座フォロー中';
+			include ../shared/component/_article_unfollow
+			- var text = 'シリーズフォロー中';
+			include ../shared/component/_article_unfollow
+		header.leafProfileHeader
+			include ../shared/part_ui/_header
+		.articleBody.leafProfileDescription.panelIndent
+			include ../shared/part_ui/_description_text
+		.titleThemePage
+			h2 クリップ
+		.twoCompare
+			.beforeStatus
+				p.titleNotice クリップ前
+				include ../shared/component/_article_clip_unactive
+			.afterStatus
+				p.titleNotice クリップ後
+				include ../shared/component/_article_clip_active
+		.titleThemePage
+			h2 著者複数人
+		.panelIndent
+			.twoCompare
+				.beforeStatus
+					p.titleNotice 通常（1名）
+					include ../shared/component/_author_header_alone
+				.afterStatus
+					p.titleNotice 複数人
+					include ../shared/component/_author_header
+			.arrowTitleTop 
+				p ↑ <br>
+					| 複数人の場合は「他○名」押下で <br>
+					| モーダルが表示されます 
+		.titleThemePage
+			h2 公開予定のセミナー
+		.panelIndent
+			include ../shared/component/_article_seminar
+		.titleThemePage
+			h2 ランキングタブ
+		.scrollMenuTheme
+			p.arrowTitleRight スクロール可能　→
+			include ../shared/component/_horizontal_scroll
+			include ../shared/component/_horizontal_scroll_second
+		.titleThemePage
+			h2 投票
+		.panelIndent
+			.progressBarBox
+				include ../shared/leaf_content/progress_bar_theme/_progress_bar_1
+		.panelIndent
+			.progressBarBox
+				include ../shared/leaf_content/progress_bar_theme/_progress_bar_2
+		.panelIndent
+			.progressBarBox
+				include ../shared/leaf_content/progress_bar_theme/_progress_bar_3
+		.panelIndent
+			.progressBarBox
+				include ../shared/leaf_content/progress_bar_theme/_progress_bar_6

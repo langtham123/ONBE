@@ -1,0 +1,15 @@
+.commentBox
+	h5 コメント12件
+	.commentContent(data-simplebar,data-simplebar-auto-hide="false")
+		ul
+			- for (var i=0; i<4; i++)
+				include _comment_item
+	form.frmComment(action='#')
+		.avatarCicrle.sizeThirtyTwo
+			img(src='../../images/onb/2019/Oval4.png', alt='')
+		textarea(placeholder='コメントを追加…' )
+		button(type='submit',value='') 送信
+		a.replyClose(href='#')
+			i.icon.iconClose_18x18
+
+include ./popup/_pop_up_comment_close

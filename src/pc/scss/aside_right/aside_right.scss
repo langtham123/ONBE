@@ -1,0 +1,665 @@
+.asideRight {
+	.adRectangle {
+		width: 300px;
+		height: 250px;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+		}
+	}
+
+	.subColHead {
+		.topLeftTriangle {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 8px 0 0;
+			border-color: $color--E6001E transparent transparent transparent;
+		}
+
+		h2 {
+		  	font-size: 17px;
+		  	font-weight: bold;
+		  	line-height: 1.41;
+		  	letter-spacing: 0.2px;
+		  	color: $color--242424;
+		  	margin: 8px 0 14px 0;
+		}
+	}
+
+	.tabWrapper {
+		border-bottom: 1px solid $color--EEEEEE;
+		ul.tabHeader {
+			border-bottom: 1px solid $color--E6001E;
+			display: flex;
+			padding-left: 0;
+			li {
+				width: 100px;
+				display: inline-block;
+				text-align: center;
+				padding-bottom: 10px;
+				color: $color--666666;
+				font-size: $font--15;
+				font-weight: 500;
+			}
+			li.active {
+				font-weight: bold;
+				color: $color--242424;
+				border-bottom: 2px solid $color--E6001E;
+			}
+		}
+
+		.tabContent {
+			padding: 0 12px;
+			.tabItem {
+				padding-left: 0;
+				.rankItem {
+					overflow: hidden;
+					border-bottom: 1px solid $color--EEEEEE;
+					padding: 13px 0;
+					&:hover {
+						h3 {
+							color: $color--E6001E;
+						}
+					}
+				}
+
+				li:last-child .rankItem{
+					border-bottom: none;
+				}
+
+				.rankTitle {
+					.rankNumber {
+						width: 20px;
+						height: 18px;
+						display: inline-block;
+					    position: relative;
+	    				bottom: -2px;
+	    				span {
+						    font-size: 10px;
+						    position: absolute;
+						    bottom: -3px;
+						    left: 7.5px;
+						    color: $color--FFFFFF;
+	    				}
+	    				img {
+	    					width: 20px;
+	    					height: 18px;
+	    				}
+					}
+					p.parentTitle {
+						width: calc(100% - 25px);
+						display: inline-block;
+						font-size: 12px;
+						color: $color--666666;
+						font-weight: 400;
+						margin: 0;
+					}
+				}
+				.rankContent {
+					margin-top: 5px;
+					h3 {
+						width: 204px;
+						padding-right: 12px;
+						display: block;
+						font-size: 14px;
+						font-weight: bold;
+						float: left;
+						line-height: 1.5;
+					}
+					img {
+						width: 60px;
+						display: block;
+						float: right;
+					}
+				}
+
+				.rankItem.rankNormal {
+					.rankTitle {
+						.rankNumber {
+							width: 18px;
+    						height: 15px;
+							span {
+								color: $color--666666;
+								width: 13px;
+								height: 13px;
+								bottom: 0px;
+								left: 3px;
+								display: -ms-flexbox;
+								display: flex;
+								-ms-flex-pack: center;
+								justify-content: center;
+								-ms-flex-align: center;
+								align-items: center;
+								-ms-flex-direction: column;
+								flex-direction: column;
+								border: 1px solid;
+								border-color: $color--666666 ;
+							}
+						}
+					}
+					.rankContent {
+						h3 {
+							width: 100%;
+							float: none;
+							padding-right: 0;
+							letter-spacing: 0.2px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.otherLink {
+		font-size: 14px;
+		color: $color--E6001E;
+		text-align: right;
+		margin: 10px 0 30px 0;
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+	
+
+	.recommendBox {
+		border: 1px solid ;
+		border-color: $color--EEEEEE ;
+		padding: 20px 12px;
+		overflow: hidden;
+		.recommendTitle {
+			font-weight: bold;
+			color: $color--242424;
+			font-size: 14px;
+			margin: 0 0 5px 0;
+		}
+		.recommendSummary {
+			color: $color--666666;
+			font-size: 12px;
+			margin-top: 5px;
+		}
+
+		.recommendImg {
+			width: 60px;
+			float: right;
+			margin-top: 5px;
+			img {
+				width: 100%;
+			}
+		}
+		a:hover .recommendTitle{
+			text-decoration: underline;
+		}
+	}
+
+	.recommendBook {
+		.recommendContent {
+			width: 200px;
+			float: left;
+		}
+		&:hover {
+			.recommendTitle {
+				color: $color--E6001E;
+			}
+		}
+	}
+
+	.recommendSeminar {
+		.recommendSummary {
+			width: 200px;
+			float: left;
+		}
+		&:hover {
+			.recommendTitle {
+				color: $color--E6001E;
+			}
+		}
+	}
+
+	.recommendInfo {
+		border: none;
+		padding: 0 12px;
+		border-bottom: 1px solid $color--EEEEEE;
+		.recommendContent {
+			border-bottom: 1px solid $color--EEEEEE;
+			overflow: hidden;
+			margin-bottom: 10px;
+			&:hover {
+				.recommendTitle {
+					color: $color--E6001E;
+					text-decoration: none;
+				}
+			}
+		}
+		.recommendTitle {
+			width: 200px;
+			float: left;
+			margin-bottom: 10px;
+		}
+		.recommendImg {
+			margin-bottom: 10px;
+		}
+		.recommendContent:last-child {
+			border-bottom: none;
+			.recommendTitle {
+				margin-bottom: 0;
+			}
+			.recommendImg {
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+
+	.glowingCommentRight {
+		.colHead {
+			text-align: center;
+			h2{
+				font-size: 15px;
+				color: $color--242424;
+				font-weight: bold;
+				margin-top: 30px;
+				position: relative;
+				bottom: -2px;
+				display: inline-block;
+				margin-bottom: 20px;
+			}
+		}
+
+		.glowingCommentBox {
+			position: relative;
+			padding: 12px;
+			border: 1px solid #dddddd;
+			&:before {
+				content: '';
+			    position: absolute;
+			    display: block;
+			    width: 0;
+			    z-index: 1;
+			    border-style: solid;
+			    border-width: 14px 14px 0 0;
+			    border-color: #dddddd transparent transparent transparent;
+			    bottom: -14px;
+			    left: -1px;
+			}
+			&:after {
+				content: '';
+			    position: absolute;
+			    display: block;
+			    width: 0;
+			    z-index: 1;
+			    border-style: solid;
+			    border-width: 12px 12px 0 0;
+			    border-color: #ffffff transparent transparent transparent;
+			    bottom: -12px;
+			    left: 0px;
+			}
+			.authorInfo {
+				font-size: 12px;
+				display: -webkit-flex;
+			    -webkit-align-items: center;
+			    display: flex;
+			    align-items: center;
+			    .avatarCicrle {
+			    	line-height: 1;
+			    }
+			    .address {
+			    	color: $color--666666;
+			    }
+			}
+			
+			h3.authorName {
+				display: inline-block;
+				margin: 0 8px;
+				font-size: 12px;
+  				font-weight: bold;
+			}
+
+			.commentContent {
+				font-size: 15px;
+				margin-top: 15px;
+			}
+			.action {
+				margin-top: 8px;
+				font-size: 12px;
+				display: -webkit-flex;
+			    -webkit-align-items: center;
+			    display: flex;
+			    align-items: center;
+			    color: $color--666666;
+			    .like {
+			    	display: -webkit-flex;
+				    -webkit-align-items: center;
+				    display: flex;
+				    align-items: center;
+				    img {
+				    	position: relative;
+				    	bottom: 2px;
+				    	width: 14px;
+				    	height: 14px;
+				    	margin-right: 4px;
+				    	margin-left: 18px;
+				    }
+			    }
+			}
+		}
+	}
+
+	.raise {
+		font-weight: bold;
+		margin: 22px 0 10px 0;
+		border-bottom: 1px solid $color--EEEEEE;
+		padding-bottom: 12px;
+		.tagRaise {
+			font-size: 10px;
+			display: inline-block;
+			color: $color--E6001E;
+			padding: 0 12px;
+			border: 1px solid;
+			border-color: $color--E6001E;
+		}
+		.raiseContent {
+			font-size: 12px;
+			display: inline-block;
+			margin: 0;
+		}
+		&:hover {
+			.raiseContent {
+				color: $color--E6001E;
+			}
+		}
+	}
+
+	.searchBox {
+		.inputWithIcon {
+			position: relative;
+			input {
+				height: 40px;
+				border: 0;
+    			outline: none;
+    			background-color: #f2f6f8;
+    			border-radius: 2px;
+    			padding-left: 36px;
+    			font-size: 13px;
+    			width: calc(100% - 36px);
+			}
+			i {
+				position: absolute;
+			    left: 10px;
+			    top: 11px;
+			}
+		    
+		}
+	}
+
+	.tagSearch {
+		margin-top: 20px;
+		margin-bottom: 18px;
+		.tagKeyword {
+			border-radius: 4px;
+ 			border: 1px solid ;
+			border-color: $color--EEEEEE ;
+ 			padding: 3px 10px;
+ 			display: inline-block;
+ 			color: $color--E6001E;
+ 			margin: 0 12px 10px 0;
+ 			&:hover {
+ 				text-decoration: underline;
+ 			}
+		}
+	}
+
+
+	.businessTrend {
+		margin-bottom: 30px;
+		h2 {
+			font-size: 16px;
+  			font-weight: bold;
+  			color: #7a7a7a;
+		}
+		.businessTrendBox {
+			border-bottom: 1px solid $color--EEEEEE;
+			padding-bottom: 15px;
+			.businessTrendTitle {
+				font-size: 12px;
+				color: $color--666666;
+				margin-bottom: 10px;
+				margin-top: 15px;
+			}
+			.businessTrendSummary {
+				font-size: 14px;
+				font-weight: bold;
+			}
+			&:hover {
+				.businessTrendSummary {
+					color: $color--E6001E;
+				}
+			}
+		}
+	}
+
+	.dagAd {
+		padding: 15px 0;
+		border-top: 1px solid $color--EEEEEE;
+		border-bottom: 1px solid $color--EEEEEE;
+		overflow: hidden;
+		margin-bottom: 30px;
+		.dagAdLeftImg {
+			width: 60px;
+			height: 60px;
+			float: left;
+		}
+		.dagAdContent {
+			width: 220px;
+			float: right;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		&:hover {
+			.dagAdContent {
+				color: $color--E6001E;
+			}
+		}
+	}
+}
+
+.topComment {
+	margin-bottom: 30px;
+	@extend %cssFlagKeyPerson;
+	border-top: none !important;
+	.topCommentContainer {
+		display: flex;
+		border-top: 1px solid $color--E6001E;
+	}
+	ul.topCommentList {
+		margin-top: 20px;
+		li {
+			padding: 12px 0;
+			border-bottom: 1px solid $color--EEEEEE;
+			a {
+				&:hover {
+					p {
+						color: $color--E6001E;
+					}
+				}
+			}
+			.topCommentText {
+				img {
+				}
+				p {
+					display: inline;
+					font-size: 15px;
+					color: $color--242424;
+					font-weight: bold;
+				}
+			}
+			.topCommentAuthor {
+				padding-top: 15px;
+				.topCommentAuthorAvatar {
+					width: 40px;
+					height: 40px;
+					float: left;
+					margin-right: 10px;
+				}
+				.topCommentAuthorName {
+					font-size: 14px;
+					font-weight: bold;
+					color: $color--242424;
+				}
+				.topCommentAuthorTitle {
+					font-size: 14px;
+					font-weight: 500;
+					color: $color--666666;
+				}
+			}
+		}
+	}
+	ul.topCommentAuthorAvatar {
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 1px solid $color--EEEEEE;
+		padding: 14px 0;
+		position: relative;
+		li {
+			display: flex;
+			a {
+				display: flex;
+				padding: 0 5px;
+			}
+		}
+	}
+	.topCommentPopup {
+		position: absolute;
+		top: -102px;
+		left: 0;
+		background: #FFFFFF;
+		width: 288px;
+		padding: 10px;
+	    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    	border: solid 1px #dddddd;
+    	visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.5s linear;
+		img {
+			display: inline;
+		}
+		p {
+			display: inline;
+			font-size: 14px;
+			font-weight: 500;
+			color: $color--242424;
+		}
+		.topCommentPopupAuthor {
+			font-size: 12px;
+			font-weight: bold;
+			color: $color--242424;
+		}
+		.topCommentPopupTitle {
+			font-size: 12px;
+			font-weight: 500;
+			color: $color--666666;
+		}
+		.arrowDown {
+			width: 0; 
+			height: 0; 
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 20px solid #f00;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -7px;
+			left: 18px;
+			width: 10px;
+			height: 10px; 
+			background: #FFFFFF;
+			border-right:1px solid #CAD5E0;
+			border-bottom:1px solid #CAD5E0;
+			-moz-transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+		}
+	}
+	.authorSecond {
+		&:after {
+			left: 66px;
+		}
+	}
+	.authorThree {
+		&:after {
+			left: 118px;
+		}
+	}
+	.authorFour {
+		&:after {
+			left: 166px;
+		}
+	}
+	.authorFive {
+		&:after {
+			left: 218px;
+		}
+	}
+	.authorSix {
+		&:after {
+			left: 266px;
+		}
+	}
+}
+.rankPosts {
+	border-top: 1px solid #06375c;
+	border-bottom: 1px solid #06375c;
+	margin-bottom: 30px;
+	.rankPostTitle {
+		font-size: 17px;
+		font-weight: bold;
+		color: #06375c;
+		margin-top: 10px;
+	}
+	ul.rankPostList {
+		li {
+			padding: 13px 0;
+			border-bottom: 1px solid $color--EEEEEE;
+			a.rankItem {
+				display: flex;
+				%postRank {
+					height: 20px;
+					flex: 0 0 20px;
+					text-align: center;
+					line-height: 20px;
+					font-size: 12px;
+					font-weight: 500;
+					color: #FFFFFF;
+					display: flex;
+					justify-content: center;
+					margin-right: 8px;
+					margin-top: 3px;
+				}
+				.postRankActive {
+					@extend %postRank;
+					background-color: #06375c;
+				}
+				.postRankNoneActive {
+					border: 1px solid #06375c;
+					box-sizing: border-box;
+					color: #06375c;
+					@extend %postRank;
+				}
+				.postRankTilte {
+					font-size: 14px;
+					font-weight: bold;
+					color: $color--242424;
+					line-height: 1.57;
+					img {
+						margin-left: 8px;
+					}
+				}
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}

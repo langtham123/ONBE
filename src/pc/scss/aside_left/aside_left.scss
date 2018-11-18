@@ -1,0 +1,326 @@
+%cssAim {
+  .aim {
+    width: 100%;
+    background: $color--E6001E;
+    position: relative;
+    p {
+      width: 173px;
+      margin: auto;
+      padding: 16px 0;
+      line-height: 1.42;
+      font-size: $font--24;
+      color: $color--FFFFFF;
+      font-weight: 800;
+    }
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-right: 8px solid transparent;
+      border-top: 8px solid $color--E6001E;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+
+  }
+}
+
+%cssFlagKeyPerson {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-top: 1px solid $color--E6001E;
+  .topRedNote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98px;
+    background: $color--E6001E;
+    font-weight: bold;
+    color: $color--FFFFFF;
+    text-align: center;
+    line-height: 24px;
+    p {
+      margin: 0;
+    }
+  }
+  .flagKeyArrow {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color--E6001E;
+    line-height: 24px;
+    right: 0;
+    top: 0;
+    img {
+      display: inline;
+    }
+    a {
+      display: inline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.asideLeft {
+  .noguchi {
+    @extend %cssAim;
+    p {
+      &.name {
+        font-size: $font--17;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      &.position {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .compareLastyear {
+    @extend %cssAim;
+    margin-top: 70px;
+    p {
+      &.imgAlt {
+        color: $color--666666;
+        margin-top: 2px;
+      }
+      &.title {
+        font-size: $font--17;
+        font-weight: bold;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .dateNumber {
+    position: relative;
+    width: 100%;
+    border: solid 2px $color--E6001E;
+    margin-top: 54px;
+    text-align: center;
+    img {
+      margin-top: 32px;
+    }
+    p {
+      &.datetime {
+        position: absolute;
+        left: -2px;
+        top: -12px;
+        font-weight: bold;
+        color: $color--E6001E;
+        z-index: 9999;
+        background: $color--FFFFFF;
+        padding-bottom: 9px;
+        padding-right: 15px;
+      }
+      &.title {
+        font-weight: bold;
+        line-height: 1.5;
+        width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    a.backNumber {
+      display: block;
+      width: 160px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 27px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 2px;
+      border: solid 1px $color--dddddd;
+      color: $color--E6001E;
+      font-weight: 500;
+    }
+  }
+
+  .noguchiSecond {
+    @extend %cssFlagKeyPerson;
+    margin-bottom: 33px;
+    p {
+      line-height: 1.42;
+      &.position {
+        position: absolute;
+        left: 11px;
+        bottom: 112px;
+        color: $color--FFFFFF;
+        font-weight: 500;
+      }
+      &.name {
+        position: absolute;
+        left: 11px;
+        bottom: 87px;
+        color: $color--FFFFFF;
+        font-size: $font--17;
+        font-weight: bold;
+      }
+      &.slogan {
+        line-height: 1.42;
+        font-size: $font--24;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+    &:hover {
+      color: $color--E6001E;
+    }
+  }
+  .todayData {
+    @extend %cssFlagKeyPerson;
+    margin-bottom: 25px;
+    p {
+      line-height: 1.42;
+      &.name {
+        position: absolute;
+        left: 11px;
+        bottom: 85px;
+        color: $color--FFFFFF;
+        font-size: $font--17;
+        font-weight: bold;
+      }
+      &.slogan {
+        font-size: $font--24;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+    &:hover {
+      color: $color--E6001E;
+    }
+  }
+  .latestIssue {
+    @extend %cssFlagKeyPerson;
+    p {
+      line-height: 1.42;
+      text-align: center;
+      &.date {
+        color: $color--666666;
+        font-weight: 500;
+        margin: 0;
+      }
+      &.slogan {
+        font-size: $font--17;
+        font-weight: bold;
+        width: 160px;
+        margin: 0 auto;
+      }
+    }
+    &:hover {
+      color: $color--E6001E;
+    }
+  }
+  ul.latestIssueList {
+    margin-top: 18px;
+    border-top: 1px solid $color--EEEEEE;
+    li {
+      border-bottom: 1px solid $color--EEEEEE;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      a {
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i.icon.viewer {
+          margin-right: 6px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .globalNews {
+    margin-top: 29px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-right: 8px solid transparent;
+      border-top: 8px solid $color--E6001E;
+    }
+    p.title {
+      font-size: $font--17;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+    p.subTitle {
+      color: $color--666666;
+      margin-top: 10px;
+    }
+    ul.globalNewsList {
+      margin-top: 22px;
+      li {
+        a {
+          display: inline-block;
+          padding-bottom: 18px;
+          border-bottom: 1px solid $color--EEEEEE;
+          margin-bottom: 16px;
+          img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            float: left;
+          }
+          p {
+            float: left;
+            &.itemTitle {
+              float: left;
+              font-weight: bold;
+              width: 150px;
+            }
+            &.subItemTitle {
+              font-size: $font--12;
+              font-weight: 500;
+              color: $color--666666;
+            }
+            &.itemDescription {
+              clear: both;
+              font-weight: 500;
+              color: $color--666666;
+              margin-top: 10px;
+            }
+          }
+          &.justIn {
+            p {
+              float: left;
+              &.subItemTitle {
+                font-size: $font--12;
+                font-weight: 500;
+                color: $color--E6001E;
+              }
+              &.itemDescription {
+                clear: both;
+                font-size: 16px;
+                font-weight: bold;
+                color: $color--242424;
+                margin-top: 10px;
+              }
+            }
+          }
+          &:hover{
+            p.itemTitle {
+              color: red;
+            }
+          }
+        }
+      }
+      .globalNewsWrapper {
+        display: flex;
+        align-items: center;
+        .globalNewsLeft {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

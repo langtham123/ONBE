@@ -1,0 +1,11 @@
+.commentBox
+	h5 コメント12件
+	.commentContent(data-simplebar,data-simplebar-auto-hide="false")
+		ul
+			- for (var i=0; i<4; i++)
+				include _comment_item
+	.signUp
+		.signUpContent
+			p 会員登録でコメントが可能になります
+				a(href="#").signUpConTentRed 詳細 
+					img(src='../../images/onb/2019/iconSignUp.png', alt='')

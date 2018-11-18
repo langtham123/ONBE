@@ -1,0 +1,45 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+		
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンクPC
+
+
+block content
+	article
+		.leafContainer
+			header.leafHeader.leafRaiseHeader
+				include ../shared/leaf_raise/_header
+			.articleBody
+				include ../shared/leaf_raise/_description_text
+				
+				include ../shared/leaf_raise/_main_text
+			section
+				.panelIndent
+					hr.bottomAlign
+			section
+				.panelIndent
+					include ../shared/leaf_content/_raise_comment_signup
+			section
+				.panelIndent
+					hr.bottomAlign
+			section
+				.leafTagRaise
+					include ../shared/leaf_content/_leaf_tag
+			section
+				include ../shared/component/_online_interns
+			- var img_name = 'ADRectangle.png'
+			include ../shared/component/_ad_rectangle
+			section.panelIndent
+				- var title = '似た内容の議論'
+				include ../shared/component/_title_box
+				include ../shared/component/_discussion_box_2
+		

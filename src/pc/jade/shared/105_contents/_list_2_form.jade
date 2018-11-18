@@ -1,0 +1,20 @@
+.tabWrapper
+    ul.tabHeaderMyPage
+        li
+            a(href="#tabNotification") 通知
+        li
+            a(href="#tabTagNewArrival") タグ新着
+        li.active
+            a(href="#tabClip") クリップ
+    .tabContent
+        ul.tabItem#tabClip
+            include _list_item_2_form
+            include _list_item_2_blank_form
+            - for (var i = 0; i < 9; ++i)
+                include _list_item_2_blank
+
+.paginate
+
+    button.btnPaginate
+        | もっと見る
+        img(src='../../images/onb/2019/btnReadMore.png', alt='')

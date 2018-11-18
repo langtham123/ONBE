@@ -1,0 +1,20 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.https://cdn.zeplin.io/5bae2277ac2c227146b3d896/screens/4FE4A16E-8D49-4A26-9D07-B83F59DA79DA.pngjs')
+
+block title
+	title 1009_リゾームペイウォール
+block header
+	include ../shared/body_header/_body_header_1
+
+block content
+	article
+		include ../shared/105_contents/_header_1009
+		.articleList
+			section.myPage
+				include ../shared/105_contents/_list_1009
+				include ../shared/component/_register_for_use

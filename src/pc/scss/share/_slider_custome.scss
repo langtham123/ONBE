@@ -1,0 +1,79 @@
+%cssItemTitle{
+	h5{
+		font-size: $font--12;
+		font-weight: 500;
+		color: $color--666666;
+		height: 24px;
+		letter-spacing: 0.2px;
+
+	}
+	p{
+		font-size: $font--12;
+		font-weight: 500;
+		line-height: 1.5em;
+		letter-spacing: 0.2px;
+	}
+}
+%cssItemArrow{
+	position: absolute;
+	span{
+		font-size: $font--24;
+		color: $color--E6001E;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+.twoItemControl{
+	border-top: 1px solid  $color--EEEEEE;
+	clear: both;
+	position: relative;
+	.item{
+		margin-top: 18px;
+		margin-bottom: 22px;
+		display: flex;
+		margin-left: 31px;
+		margin-right: 36px;
+		.itemleft{
+			padding-right: 14px;
+			border-right: 1px solid  $color--EEEEEE;
+			@extend %cssItemTitle;
+			&:after {
+				content: "‹";
+				position: absolute;
+				left: 11px;
+				top: 46px;
+				font-size: 24px;
+				color: $color--E6001E;
+			}
+		}
+		.itemRight{
+			padding-left: 14px;
+			@extend %cssItemTitle;
+			&:before {
+				content: "›";
+				position: absolute;
+				right: 19px;
+				top: 46px;
+				font-size: 24px;
+				color: $color--E6001E;
+			}
+		}
+
+	}
+	.owl-nav{
+		button.owl-prev{
+			@extend %cssItemArrow;
+			left: 11px;
+			top: 46px;
+		}
+		button.owl-next{
+			@extend %cssItemArrow;
+			right: 19px;
+			top: 46px;
+		}
+	}
+	.owl-dots{
+		display: none;
+	}
+}

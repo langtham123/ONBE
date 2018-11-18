@@ -1,0 +1,28 @@
+- var items = []
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w',description:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w',description:'AI関連なのであとで読む。'})
+- items.push({date:'2018.MM.DD',parentTitle: '親記事タイトル', title: 'タイトルが入ります。タイトルが入ります。タイトルが入ります32w'})
+
+for item in items
+    li.clip.panelIndent
+        .itemHead
+            p.date= item.date
+            a.itemClose(href='#')
+                i.icon.incon_close_20x20
+                | 削除
+        .itemTitle
+            p.parentTitle= item.parentTitle
+            a(href='#')
+                p.title= item.title
+                img(src='../../images/onb/2019/sp/car.png', alt='')
+            if item.description
+                p.description= item.description
+                a.itemEdit(href='#') メモを編集
+                a.itemDelete(href='#') メモを削除
+            else
+                a.itemEdit(href='#') メモを追加
+            form.frmItemEditNote
+                textarea= item.description
+                button.itemDecision 決定
+                button.itemCancel キャンセル
+

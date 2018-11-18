@@ -1,0 +1,31 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title Special Issue
+block content
+	article
+		.leafSpecialArticle
+			header.articleHeader
+				include ../shared/special_issue/_header
+			.panelIndent
+				.articleBody
+					include ../shared/special_issue/_main_text
+					.leafNoMargin
+						include ../shared/special_issue/_leaf_tag
+			article.articleList
+				include ../shared/special_issue/_list_new_post
+				- var img_name = 'ADRectangle2.png'
+				include ../shared/component/_ad_rectangle
+				include ../shared/special_issue/_list_pick_up
+				- var img_name = 'ADRectangle2.png'
+				include ../shared/component/_ad_rectangle
+				include ../shared/special_issue/_list_back_number

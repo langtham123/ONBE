@@ -1,0 +1,6 @@
+.commentBox
+	h5 コメント12件
+	.commentContent(data-simplebar,data-simplebar-auto-hide="false")
+		ul
+			- for (var i=0; i<4; i++)
+				include _comment_item

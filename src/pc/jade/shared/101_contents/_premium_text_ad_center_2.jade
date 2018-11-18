@@ -1,0 +1,19 @@
+- var items = []
+- items.push({img:'../../images/onb/2019/img_5.png',title:'米国初、焦土の先の未来'})
+- items.push({img:'../../images/onb/2019/img_4.png',title:'物価のモノサシ PER/PBRの違い'})
+- items.push({img:'../../images/onb/2019/img_3.png',title:'バカ売れ弁当、即完売の秘密'})
+section.topArticleSecond
+    .topItem
+        a(href='#')
+            .topItemImage
+                img(src='../../images/onb/2019/Rectangle_12.png',alt='')
+            .topRedNote
+                p ピックアップ
+            p.title 失敗を力に変える 七転び八起きのメカニズム
+    ul.similarItem
+        for item in items
+            li
+                a(href='#')
+                    .similarItemImage
+                        img(src=item.img, alt='')
+                    p.title!=item.title

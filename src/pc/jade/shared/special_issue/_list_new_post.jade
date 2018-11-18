@@ -1,0 +1,48 @@
+- var articleItems = []
+- articleItems.push({category:'連載タイトルが入ります。',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w', comment:'12',like:'76%',img:'../../images/onb/2019/spec_1.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'企業研究',title:"「一発屋」で終わらない。小林製薬｜日用品・医薬品", comment:'#新市場',like:'#マーケティング',img:'../../images/onb/2019/spec_2.png',lock:'',chart:false, flag:'seminar',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'連載タイトルが入ります。',title:"タイトルが入ります。タイトルが入ります。タイトルが入ります。32w", comment:'12',like:'76%',img:'../../images/onb/2019/spec_3.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'連載タイトルが入ります。',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w', comment:'12',like:'76%',img:'../../images/onb/2019/spec_4.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'連載タイトルが入ります。',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w', comment:'12',like:'76%',img:'../../images/onb/2019/spec_1.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'企業研究',title:"「一発屋」で終わらない。小林製薬｜日用品・医薬品", comment:'#新市場',like:'#マーケティング',img:'../../images/onb/2019/spec_2.png',lock:'',chart:false, flag:'seminar',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'連載タイトルが入ります。',title:"タイトルが入ります。タイトルが入ります。タイトルが入ります。32w", comment:'12',like:'76%',img:'../../images/onb/2019/spec_3.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+- articleItems.push({category:'連載タイトルが入ります。',title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w', comment:'12',like:'76%',img:'../../images/onb/2019/spec_1.png',lock:'',chart:false, flag:'',description: '経営危機のパイオニアが香港の投資ファンドの傘下に入ることになった。だが、事実上の中'})
+section
+    ul.listArticle
+        li.listArticleTitle
+                p 新着記事
+        for item in articleItems
+            li
+                a(href='#')
+                    .articleContent
+                        p.category
+                            case item.flag
+                                when 'raise'
+                                    span.raise Raise
+                                when 'seminar'
+                                    span.seminar ゼミナール
+                            = item.category
+                        p.title= item.title
+                        p.description= item.description
+                            if item.lock != ''
+                                i.icon(class=item.lock)
+                        .likeAndComment
+                            if item.comment != '' && item.flag != 'seminar'
+                                img(src='../../images/onb/2019/commentIcon.png',alt='')
+                                span.firstElement!= item.comment
+
+                            if item.comment == '#新市場'
+                                span.firstElement.null #新市場
+
+                            if item.like != '' && item.flag != 'seminar'
+                                img(src='../../images/onb/2019/likeIcon.png',alt='')
+                                span= item.like
+
+                            if item.like == '#マーケティング'
+                                span.null #マーケティング
+
+                            if item.chart
+                                i.icon.iconchart
+                                span.chartText アクセス上位
+                    .articleThumb
+                        img(src= item.img,alt='')

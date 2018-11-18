@@ -1,0 +1,32 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/owl.carousel.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick-theme.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/owl.carousel.min.js')
+	script(src='../../js/onb/2019/lib/slick.min.js')
+
+block title
+	title 401_子記事一覧_著者
+
+block content
+	article
+		.articleList
+			section.panelIndent
+				include ../shared/component/_glowing_comment_box
+			
+		- var img_name = 'ADRectangle.png'
+		include ../shared/component/_ad_rectangle
+		section.panelIndent
+			include ../shared/component/_business_trend
+			- var url = '#', text = 'ビジネストレンド一覧'
+			include ../shared/component/_other_link
+
+

@@ -1,0 +1,25 @@
+extends ../shared/layout_blank.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 399_コメント　通知・光るコメントから遷移した時 PC
+
+block content
+	article
+		.leafContainer
+			.articleBody
+				include ../shared/leaf_content/_button_link_3
+				include ../shared/leaf_content/_text_end_2
+				include ../shared/leaf_content/_leaf_tag
+			section
+				include ../shared/leaf_content/comment_theme/_comment_list_2
+			section
+				include ../shared/leaf_content/_progress_bar

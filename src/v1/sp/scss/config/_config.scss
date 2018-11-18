@@ -1,0 +1,74 @@
+@import "color";
+@import "font_size";
+@import "font_family";
+@import "icon";
+
+
+
+html{
+	body{
+		font-family: $font--default;
+		font-size: $font--14;
+		color: #242424;
+	}
+
+	.headerTop {
+		margin: 0 auto;
+	}
+
+	.content {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.panelIndent{
+		margin: 0 16px;
+	}
+
+	.smallScreenMode .panelIndent {
+		margin: 0 8px;
+	}
+
+	.popupClassHide {
+		display: none;
+	}
+	
+	.simple-popup-content {
+		padding: 0;
+		background: transparent !important;
+		overflow: inherit;
+	}
+
+	.simple-popup-content {
+		.close {
+			top: -42px;
+			right: -8px;
+			&:before {
+				color: $color--FFFFFF;
+			}
+		}
+	}
+	.avatarCicrle {
+		overflow: hidden;
+		position: relative;
+		border-radius: 50%;
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			width: 100%;
+			min-height: 100%;
+		}
+		&.sizeSeventyTwo {
+			width: 72px;
+			height: 72px;
+		}
+		&.sizeForty {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+- var items = [{'tag': '#アマゾン','parentTitle': '親記事タイトルが入ります','description':'テキストが入ります。テキストが入ります。テキストが入ります。32w','date':'2018.MM.DD'},{'tag': '#ウォルマート','parentTitle': 'インタビュー','description':'米アマゾンが広告収入でさらに急拡大する理由','date':'2018.MM.DD'}, {'tag': '#三菱','parentTitle': '「トランプ時代」を生き抜くための防衛政策','description':'宇宙・電脳・電磁戦を担う統合部隊を創設せよ','date':'2018.MM.DD'}, {'tag': '#創業家','parentTitle': '時事深層','description':'ブラック化した「地銀優等生」の内実','date':'2018.MM.DD'}, {'tag': '#サイバーセキュリティ','parentTitle': '特集　パスワード 16億件流出','description':'セキュリティーの責任は、経営層が担うべきだ','date':'2018.MM.DD'},{'tag': '#アマゾン','parentTitle': 'おいしい未来はここにある～突撃！食卓イノベーション','description':'一人の食卓もアレクサと一緒なら楽しくなる？','date':'2018.MM.DD'}]
+
+for item in items
+    li
+        a.item.panelIndent(href='#')
+            p.tag= item.tag
+            p.date= item.date
+            p.parentTitle= item.parentTitle
+            p.description= item.description
+            

@@ -1,0 +1,401 @@
+@import "../config/color";
+@import "../config/font_size";
+
+%footerWrap {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%btncorpLogo {
+  width: 110px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+}
+
+%localFooterItem {
+  line-height: 32px;
+  font-weight: 500;
+  width: 172px;
+  height: 32px;
+  color: #242424;
+  font-size: 14px;
+  font-weight: bold;
+  &.lastitem{
+    width: 186px;
+  }
+
+}
+
+%localFooterItemHead {
+  color: $color--666666;
+  height: auto;
+  font-size: 14px;
+}
+
+
+footer.mainFooter {
+  background: $color--F6F6F6;
+  &.expansion {
+    background-color: transparent;
+    padding-bottom: 40px;
+  }
+  .corpLogo {
+    background: $color--F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+    ul {
+      display: flex;
+      li {
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        a{
+          i.iconFb{
+            width: 15.6px;
+            height: 30px;
+            background-size: 100% 100%;
+            margin-left: 57px;
+          }
+          i.iconTw{
+            width: 33.8px;
+            height: 27.5px;
+            background-size: 100% 100%;
+            margin-left: 40px;
+          }
+          i.iconIn{
+            width: 29.6px;
+            height: 29.6px;
+            background-size: 100% 100%;
+            margin-left: 40px;
+          }
+        }
+        .corpImgLogo {
+          width: 177px;
+          height: 33px;
+        }
+      }
+
+    }
+    .corpLogoButton {
+      margin-top: 20px;
+      display: flex;
+      .btncorpLogoWhite {
+        @extend %btncorpLogo;
+        border-radius: 2px;
+        border: 1px solid ;
+        border-color: $color--dddddd;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .btncorpLogoRedText {
+        @extend %btncorpLogo;
+        font-weight: bold;
+        border-radius: 2px;
+        border: 1px solid ;
+        border-color: $color--dddddd;
+        color: $color--E6001E;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .btncorpLogoRed {
+        @extend %btncorpLogo;
+        border-radius: 2px;
+        border: none;
+        color: $color--FFFFFF;
+        margin-left: 20px;
+        background-color: #ff9a9a; background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9a9a), to(#e6001e));
+        background-image: -webkit-linear-gradient(top, #ff9a9a, #e6001e);
+        background-image: -moz-linear-gradient(top, #ff9a9a, #e6001e);
+        background-image: -ms-linear-gradient(top, #ff9a9a, #e6001e);
+        background-image: -o-linear-gradient(top, #ff9a9a, #e6001e);
+        background-image: linear-gradient(to right, #ff9a9a, #e6001e);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff9a9a, endColorstr=#e6001e);
+        &:hover {
+          background: $color--F6F6F6;
+          color: $color--E6001E;
+          border: 1px solid $color--E6001E;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .corpLogoContainer {
+      @extend %footerWrap;
+      display: flex;
+      position: relative;
+      ul.corpLogoButtonNewOne {
+        margin-top: 0px;
+        li {
+          margin-right: 20px;
+          height: 30px;
+          width: 160px;
+          a {
+            margin: 0;
+            height: 28px;
+            width: 160px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            &.btncorpLogoWhite {
+              font-weight: bold;
+            }
+            &.btncorpLogoGreen {
+              background-color: #5bb7a6;
+              background-image: -webkit-gradient(linear, left top, left bottom, from(#5bb7a6), to(#169b82));
+              background-image: -webkit-linear-gradient(top, #5bb7a6, #169b82);
+              background-image: -moz-linear-gradient(top, #5bb7a6, #169b82);
+              background-image: -ms-linear-gradient(top, #5bb7a6, #169b82);
+              background-image: -o-linear-gradient(top, #5bb7a6, #169b82);
+              background-image: linear-gradient(to right, #5bb7a6, #169b82), linear-gradient(276deg, rgba(255, 255, 255, 0), #FFFFFF);
+              filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#5bb7a6, endColorstr=#169b82);
+              color: #fff;
+              border-radius: 2px;
+              &:hover {
+                background: #F6F6F6;
+                color: #5bb7a6;
+                border: 1px solid #5bb7a6;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+      .corpLogoButtonNewTwo {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  nav.localFooter {
+    a {
+      &:hover {
+        color: $color--E6001E;
+      }
+    }
+    .localFooterSubFirst {
+      @extend %footerWrap;
+      background: $color--F6F6F6;
+      padding-top: 32px;
+      display: flex;
+      .localFooterLeft {
+        float: left;
+        display: flex;
+        align-items: baseline;
+        ul {
+          align-self: baseline;
+          li {
+            @extend %localFooterItem;
+            &.head{
+             @extend %localFooterItemHead;
+             font-weight: normal;
+           }
+         }
+         &.localFooterlist2{
+          margin-left: 35px;
+        }
+      }
+    }
+    .localFooterRight {
+      float: left;
+      flex-direction: column;
+      align-items: baseline;
+      margin-left: 50px;
+      .row1{
+        display: flex;
+        ul {
+          li {
+            @extend %localFooterItem;
+            &.head{
+              @extend %localFooterItemHead;
+              font-weight: normal;
+            }
+          }
+          &.localFooterlist1{
+            align-self: flex-start;
+          }
+          &.localFooterlist2{
+            margin-left: 35px;
+          }
+          &.localFooterlist3{
+            margin-left: 35px;
+            align-self: flex-end;
+          }
+        }
+      }
+      .row2{
+        display: flex;
+        ul {
+          li {
+            @extend %localFooterItem;
+            &.head {
+              @extend %localFooterItemHead;
+              font-weight: normal;
+            }
+          }
+          &.localFooterlist4{
+            align-self: flex-start;
+          }
+          &.localFooterlist5{
+            align-self: flex-end;
+            margin-left: 35px;
+            margin-top: 40px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .localFooterSubSecond {
+    @extend %footerWrap;
+    background: $color--F6F6F6;
+    padding-top: 27px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: baseline;
+    ul {
+      align-self: flex-end;
+      li {
+        @extend %localFooterItem;
+        &.head {
+          @extend %localFooterItemHead;
+          font-weight: normal;
+        }
+      }
+      &.localFooterlist2 {
+        margin-left: 25px;
+      }
+      &.localFooterlist3 {
+        margin-left: 50px;
+      }
+      &.localFooterlist4 {
+        margin-left: 50px;
+        .localFooterlist4New {
+          display: inline;
+        }
+      }
+      &.localFooterlist5 {
+        margin-left: 50px;
+      }
+
+    }
+
+  }
+}
+
+ul.BorderLeftRed{
+  border-left: 2px solid $color--E6001E;
+  padding-left: 14px;
+}
+}
+
+footer.footer2{
+  a {
+    &:hover {
+      color: $color--E6001E;
+    }
+  }
+  background: $color--2a2a2a;
+  nav.globalFooter{
+    @extend %footerWrap;
+    background: $color--2a2a2a;
+    padding-top: 30px;
+    display: flex;
+    ul{
+      margin-left: 84px;
+      padding-left: 0;
+      display: flex;
+      align-self: center;
+      li{
+        color: $color--FFFFFF;
+        font-size: $font--12;
+        font-weight: 500;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-left: 1px solid $color--444444;
+        &:first-child{
+          padding-left: 0;
+          border-left: none;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+      &.single{
+        margin-left: 210px;
+        li{
+          border-left: none;
+          padding-left: 0;
+          padding-r: 0;
+        }
+      }
+    }
+  }
+  section.copyright{
+    @extend %footerWrap;
+    background: $color--2a2a2a;
+    padding-bottom: 19px;
+    p{
+      color: $color--666666;
+      font-size: 12px;
+    }
+  }
+  
+  &.footer2New {
+    background: #eee;
+    .globalFooter {
+      background: #eee;
+      margin-bottom: 14px;
+      ul {
+        margin-left: 131px;
+        li {
+          color: #242424;
+        }
+        &.single{
+          margin-left: 191px;
+        }
+      }
+    }
+    section.copyright {
+      background: #eee;
+    }
+  }
+
+}
+.mainFooterContainer {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .corpLogoSmall {
+    padding-right: 8.5px
+  }
+  p {
+    font-size: 9px;
+    font-weight: 500;
+    color: #7a7a7a;
+  }
+}
+
+.footerPrint {
+  display: block;
+  padding: 40px 0;
+  background-color: #f6f6f6;
+  margin-top: 40px;
+  .mainFooterContainer {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      color: #7a7a7a;
+    }
+    .corpLogo {
+      margin-bottom: 15px;
+    }
+  }
+}

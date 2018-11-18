@@ -1,0 +1,50 @@
+extends ../shared/layout_blank.jade
+
+block lib_css
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+
+block title
+	title 399_コメント　バリエーション
+
+block content
+	article
+		nav.menuFixed.menuFixedTheme
+			ul
+				li
+					a(href="#")
+						.menuFixedIconTop
+						.menuFixedTitle TOP
+				li
+					a(href="#")
+						.menuFixedIconNew
+						.menuFixedTitle 最新号
+				li
+					a(href="#")
+						.menuFixedIconSearch
+						.menuFixedTitle 検索・一覧
+				li.alertActive
+					a(href="#")
+						.menuFixedIconAlert
+						.menuFixedTitle お知らせ
+
+		nav.menuFixed.menuFixedThemeActive
+			ul
+				li.menuFixedActive
+					a(href="#")
+						.menuFixedIconTop
+						.menuFixedTitle TOP
+				li.menuFixedActive
+					a(href="#")
+						.menuFixedIconNew
+						.menuFixedTitle 最新号
+				li.menuFixedActive
+					a(href="#")
+						.menuFixedIconSearch
+						.menuFixedTitle 検索・一覧
+				li.menuFixedActive
+					a(href="#")
+						.menuFixedIconAlert
+						.menuFixedTitle お知らせ

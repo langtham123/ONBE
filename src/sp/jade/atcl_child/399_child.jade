@@ -1,0 +1,38 @@
+extends ../shared/layout_blank.jade
+
+block lib_css
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+
+block title
+	title 399_コメント　バリエーション
+
+block content
+	article
+		.commentStyle
+			.titleThemePage
+				h2 子コメント
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_child
+			.titleThemePage.second
+				h2 光るコメント/いいね済
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_gleaming
+			.titleThemePage.second
+				h2 削除コメント
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_zero
+			.titleThemePage.second
+				h2 コメント０件
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_form
+			.titleThemePage.second
+				h2 ゲストユーザー
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_signup
+			.titleThemePage.second
+				h2 コメント内リンクOGP
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_item_image

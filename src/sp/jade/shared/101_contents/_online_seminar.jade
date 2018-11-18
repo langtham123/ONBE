@@ -1,0 +1,36 @@
+.slickSeminarWrap
+	.slickSeminarCarousel
+		- for (var i = 0; i < 4; ++i)
+			a(href='#')
+				.slickSeminar
+					.slickSeminarBanner
+						img(src='../../images/onb/2019/sp/online_seminar.png',alt='')
+						.ovalMovie
+							img(src='../../images/onb/2019/sp/camera.png',alt='')
+						span.time 25:00
+						.slickSeminarTitle
+							span 連載タイトルが入ります。連載タイトルが
+							p 落合陽一氏が語るデジタルネイチャー
+					.panelIndent
+						.slickSeminarContent
+							.itemAvatar
+								.avatarCicrle.sizeThirtyTwo
+									img(src='../../images/onb/2019/sp/author_avatar.png',alt='')
+							.itemDesciption
+								p.itemTitle 長谷川 一旗
+								p 東北大学教授
+								p.itemIcon
+									span #新市場
+									span #マーケティング
+	ul.onlineSeminarList.panelIndent 
+		- for (var i = 0; i < 4; ++i)
+			li.listArticleItem
+				a(href='#')
+					.listArticleTitle
+						p 〇〇氏の特別講義
+					.listArticleContent
+						.listArticleTitle
+							h3 〇〇氏が語るセミナータイトルが入ります。
+							.listArticleIcon.listArticleIconTag
+								span #新市場
+								span #マーケティング

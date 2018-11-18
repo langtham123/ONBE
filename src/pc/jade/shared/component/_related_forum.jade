@@ -1,0 +1,18 @@
+.relatedForum
+	.relatedForumHeader 
+		h2 関連フォーラム
+	- for(var i = 1; i <= 3; i++) 
+		a(href='#')
+			.relatedForumItem
+				.relatedForumContent
+					.raise
+						span.tagRaise Raise
+						| 議題タイトルが入ります。
+					.relatedForumTitle 
+						h3 タイトルが入ります。タイトルが入ります。タイトルが入ります32w
+					.relatedForumAuthor
+						img(src='../../images/onb/2019/double_comment.png', alt='') 
+						| フェルディナント・ヤマグチさんなど
+						span.peopleParticipated 22人が参加
+				.relatedForumImg
+					img(src='../../images/onb/2019/search_map.png', alt='').

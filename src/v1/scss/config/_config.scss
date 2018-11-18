@@ -1,0 +1,64 @@
+@import "color";
+@import "font_size";
+@import "font_family";
+@import "icon";
+
+html{
+	body{
+		font-family: $font--default;
+		font-size: $font--14;
+		color: #242424;
+	}
+
+	.headerTop {
+		width: 760px;
+		margin: 0 auto;
+	}
+
+	.content {
+		width: 760px;
+		margin: 0 auto;
+	}
+
+	.simple-popup-content {
+		overflow: inherit;
+	}
+	
+	.popupClassHide {
+		display: none;
+	}
+
+	.simple-popup-content {
+		border-radius: 4px;
+		.close {
+			top: -40px;
+			right: -8px;
+			&:before {
+				color: $color--FFFFFF;
+			}
+		}
+	}
+	.avatarCicrle {
+		overflow: hidden;
+		position: relative;
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			width: auto;
+			border-radius: 50%;
+			height: 100%;
+		}
+		&.sizeSeventyTwo {
+			width: 72px;
+			height: 72px;
+		}
+		&.sizeFortyEight {
+			width: 48px;
+			height: 48px;
+		}
+	}
+}

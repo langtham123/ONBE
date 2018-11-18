@@ -1,0 +1,39 @@
+- var arrHeaderMenu={'iconNew':'新着', 'iconFeature':'特集', 'iconRaise':'Raise','iconSeminar':'ゼミナール'};
+header
+    nav.localNavi
+        a( href='#localNaviMenu', id="toggle")
+            i.icon.iconBarRed
+            span
+                | メニュー
+        #menu
+            ul
+                li
+                    a(href='#')
+                        | Home
+
+
+    section.searchBox
+        form
+            .inputWithIcon
+                input(type='text',placeholder='連載名・キーワードなどで検索')
+                i.icon.iconSearchRed
+    .loginBox
+        ul.menuLogin
+            each val, index in arrHeaderMenu
+                li
+                    a(href='#')
+                        .navButtonContent
+                            i.iconSvg(class=index)
+                            =val
+            li.notificationActive
+                a(href='#')
+                    .navButtonContent
+                        .avatarCicrle
+                            img(src='../../images/onb/2019/Oval4.png', alt='')
+
+    .siteLogo
+        a(href='/')
+            img(src='../../images/onb/2019/logo_pc.svg', alt='')
+
+
+

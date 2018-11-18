@@ -1,0 +1,14 @@
+.tabWrapper
+    ul.tabHeaderMyPage
+        li
+            a(href="#tabNotification") 通知
+        li
+            a(href="#tabTagNewArrival") タグ新着
+        li.active
+            a(href="#tabClip") クリップ
+    .tabContent
+        ul.tabItem#tabClip
+            - for (var i = 0; i < 4; ++i)
+                include _list_item_2
+
+include _seemore

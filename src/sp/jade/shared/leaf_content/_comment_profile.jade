@@ -1,0 +1,21 @@
+.commentProfileList
+    h5 著者がコメントした記事
+    ul
+        - for(var i = 1; i <= 3; i++)
+            li
+                a(href='#')
+                    .commentProfileTitle
+                        span 時事深層
+                        | 進化する宅配危機の“救世主”
+                    .commentProfileInfo
+                        .commentProfileInfoLeft
+                            .avatarCicrle
+                                img(src='../../images/onb/2019/sp/author_avatar_32.png')
+                        .commentProfileInfoRight
+                            .commentProfileInfoContent
+                                | コメントが入ります。コメン入ります。コメントが入ります。コメントが入ります。コメントが入ります…
+                            .commentProfileInfoIcon
+                                | 昨日
+                                span.commentProfileLike
+                                    i.iconSvg.iconLike
+                                    | 6

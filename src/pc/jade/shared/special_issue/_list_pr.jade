@@ -1,0 +1,12 @@
+- var articleItems2 = []
+- articleItems2.push({category:'PR',title:'ビズリーチが開発した採用お役立ち資料を、無料でダウンロード最大35文字'})
+- articleItems2.push({category:'PR',title:'第４回・「複合現実」で建設業を変える旗振り役'})
+- articleItems2.push({category:'PR',title:'新型アウディA7で味わう【アウディオンデマンド】'})
+- articleItems2.push({category:'PR',title:'ビズリーチが開発した採用お役立ち資料を、無料でダウンロード最大35文字'})
+
+ul.listArticleSecond
+    for item in articleItems2
+        li
+            a(href='#')
+                p.category= item.category
+                p.title= item.title

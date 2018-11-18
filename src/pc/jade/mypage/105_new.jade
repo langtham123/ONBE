@@ -1,0 +1,26 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+
+block title
+	title 105_BPCMSからの新着情報 PC
+
+
+block content
+	- var crumbs = ["パンくず", "パンくず"];
+	include ../shared/component/_crumb
+	article
+		include ../shared/105_contents/_header
+		.articleList
+			section.myPage
+				include ../shared/105_contents/_list_1
+
+	include ../shared/leaf_content/popup/_pop_up_203_105
+	include ../shared/leaf_content/popup/_pop_up_104_105
+
+	include ../shared/_aside_right_2

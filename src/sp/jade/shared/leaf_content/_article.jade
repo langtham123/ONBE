@@ -1,0 +1,865 @@
+h3 中見出し
+
+h4 小見出しテキスト小見出しテキスト（h3 BLK 18px）
+
+p 本文テキスト（body nomal BLK 17px）タイのバンコクから車で1時間ほど東に入ったラッカバン工業団地に、
+	span.textColRed
+		| 三菱重工業
+	| のエアコン生産を手掛ける工場がある。
+
+p 「84種類から1つを選ぶとなると難しそうだが、好みに合わせて絞り込んでいくイメージ。まず軸を握ってもらって、3種類から選ぶ。続いて、油性か
+	a(href='#')
+		| ゲルインク
+	| かを選んで、線の太さを0.5mmと0.7mmから選ぶ。あとは、軸の色とインクの色を決めて出来上がり。もちろん、インクから決めて、軸を試しながら選ぶのもいい」
+
+
+.bpimage_center
+	.bpimage_image
+		a(href='#')
+			img(src='../../images/onb/2019/sp/content2.png', alt='')
+	.bpimage_title 画像タイトル画像タイトル 
+	.bpimage_caption
+		| 画像のキャプションが入ります。画像のキャプションが入ります。
+	.bpimage_click.textColRed [画像を拡大]
+
+
+
+
+h3 テキストなどの装飾
+h4 フォントサイズの変更
+p フォント指定はp（本文）に限らず、span、li、table、tdなど、あらゆる要素に適用できることとします。また、囲み内でも利用できることとします。
+p
+	span.fontSizeXXL 超特大テキスト「fontSizeXXL」
+	br
+	br
+	span.fontSizeXL 特大「fontSizeXL」テキスト　特大「fontSizeXL」
+	br
+	br
+	span.fontSizeL 大「fontSizeL」　テキスト大「fontSizeL」　テキスト大
+	br
+	br
+	span.fontSizeS 小「fontSizeS」テキスト　小「fontSizeS」テキスト　小「fontSizeS」テキスト
+	br
+	br
+	span.fontSizeXS 極小「fontSizeXS」テキスト　極小「fontSizeXS」テキスト　極小「fontSizeXS」テキスト
+	br
+	br
+
+h4 文字色と背景色
+p サイトテーマカラー
+	br
+	br
+	span.textCol 強基本
+	| 、
+	span.textColTintA 強段階A
+	| 、
+	span.textColTintB 強段階B
+	br
+	span.textColShade 弱基本
+	| 、
+	span.textColShadeA 弱段階A
+	| 、
+	span.textColShadeB 弱段階B
+	br
+	br
+	span.bgCol 強基本
+	| &nbsp;
+	span.bgColTintA 強段階A
+	| &nbsp;
+	span.bgColTintB 強段階B
+	br
+	span.bgColShade 弱基本
+	| &nbsp;
+	span.bgColShadeA 弱段階A
+	| &nbsp;
+	span.bgColShadeB 弱段階B
+
+p
+	br
+	br
+	span.textColBlack 強基本
+	| 、
+	span.textColBlackTintA 強段階A
+	| 、
+	span.textColBlackTintB 強段階B
+	br
+	span.textColBlackShade 弱基本
+	| 、
+	span.textColBlackShadeA 弱段階A
+	| 、
+	span.textColBlackShadeB 弱段階B
+	br
+	br
+	span.bgColBlack 強基本
+	| &nbsp;
+	span.bgColBlackTintA 強段階A
+	| &nbsp;
+	span.bgColBlackTintB 強段階B
+	br
+	span.bgColBlackShade 弱基本
+	| &nbsp;
+	span.bgColBlackShadeA 弱段階A
+	| &nbsp;
+	span.bgColBlackShadeB 弱段階B
+
+p
+	br
+	br
+	| 文字色： #242424
+	br
+	| 背景色： 
+	span.bgColBlackShadeB #f6f6f6
+
+	br
+	br
+
+h4 テキストの強調
+p 日経BP標準CSSガイドラインに準ずる。
+	br
+	| テキストで太字にする部分は、
+	b bタグ
+	| か
+	span.fontBold classの「ボールド」
+	| でマークアップする。emタグやstrongタグはイタリックやボールドとせず、これらタグを太字にする場合は、
+	em emタグにclass「ボールド」
+	| 、
+	strong strongタグにclass「ボールド」
+	| をマークアップする。
+	br
+p
+	b
+		| ボールドテキストの途中
+		span.fontNormal に普通の文字を出す。
+	br
+p テキストを斜体にする部分は、iタグ、もしくは、classの「イタリック」、でマークアップする。
+	br
+	br
+h4 テキストの上付き、下付き
+p
+	| 日経BP標準CSSガイドラインに準ずる。
+	br
+	| テキストで上付きにする部分は、
+	sup supタグ
+	| でマークアップする。
+	br
+	| テキストで上付きにする部分は、
+	sub supタグ
+	| でマークアップする。
+	br
+	br
+
+h4 下線と取り消し線
+p
+	| テキストに実線下線を引くためにuタグと
+	span.textSolidUndrLine class「実線下線」
+	| を利用可能とし、非実線下線のために
+	span.textUnsolidUndrLine class「取り消し線」を用意する。
+p
+	| テキストに取り消し線を引く場合は、
+	span.textLineThrough class「取り消し線」を使う。
+	br
+	br
+h4 マーカー
+p
+	| テキストにマーカーを引くとき、強調系は
+	span.textHighlight マーカー基本色、
+	| 
+	span.textHighlightTintA マーカー追加色A、
+	| 
+	span.textHighlightTintB マーカー追加色B
+	| の3種を使用できる。
+	br
+	| 抑制的系の
+	span.textHighlightShade 弱マーカー基本色、
+	| 
+	span.textHighlightShadeA 弱マーカー追加色A、
+	| 
+	span.textHighlightShadeB 弱マーカー追加色B
+	| の3種も使用できる。
+	br
+	br
+
+h4 左寄せ、左右中央、右寄せ
+p 
+	| 日経BP標準CSSガイドラインに準ずる。
+	br
+	| フォントサイズの変更」と同様、指定はp（本文）に限らず、span、li、table、tdなど、あらゆる要素に適用できることとします。
+p.textAlignLeft このテキストは左寄せです。
+p.textAlignCenter このテキストは左右中央です。
+p.textAlignRight このテキストは右寄せです。
+	
+h4 区切り要素
+p
+	| 「&lt;p&gt;＊　　　＊　　　＊&lt;/p&gt;」のように、記号文字のテキストで区切りを表現することを禁止します。classなしの「&lt;hr&gt;」はサイトごとに記号や線などを自由に定義できます。
+	br
+	| class「diamond」「line」「arterisk」は本ガイドライン通りの仕様で実装して下さい。
+
+p ↓手前の文章A1↓
+hr
+br
+p ↑後続の文章A2↑
+br
+p ↓手前の文章B1↓
+hr.diamond
+br
+p ↑後続の文章B2↑
+br
+p ↓手前の文章C1↓
+hr.asterisk
+br
+p ↑後続の文章C2↑
+
+h3 図/表/動画
+h4 図1（基本）
+.bpimage_center
+	.bpimage_title 画像タイトル 
+	.bpimage_image
+		a(href='#')
+			img(src='../../images/onb/2019/sp/content2.png', alt='')
+	.bpimage_caption 画像のキャプションが入ります。画像のキャプションが入ります。
+	.bpimage_click.textColRed [画像を拡大]
+
+.bpimage_center
+	.bpimage_title 画像タイトル 
+	.bpimage_image
+		a(href='#')
+			img(src='../../images/onb/2019/sp/content2.png', alt='')
+	.bpimage_caption 画像のキャプションが入ります。画像のキャプションが入ります。
+	.bpimage_click [画像クリックで拡大表示]
+
+
+h4 図1-2（図のタイトルとキャプションが画像の上）
+.bpimage_right
+	.bpimage_title 画像タイトル
+	.bpimage_caption 画像のキャプションが入ります。画像のキャプションが入ります。
+	.bpimage_image
+		a(href='#')
+			img(src='../../images/onb/2019/sp/content2.png', alt='')
+	.bpimage_click [画像タップで拡大表示]
+
+h4 図1-3（二つ並び）
+.bpbox_center
+	.bpimage_double
+		.bpimage_left
+			.bpimage_title 画像タイトル
+			.bpimage_image
+				a(href='#')
+					img(src='../../images/onb/2019/sp/content2.png', alt='')
+			.bpimage_caption 画像のキャプションが入ります。画像のキャプションが入ります。
+		.bpimage_right
+			.bpimage_title 画像タイトル
+			.bpimage_image
+				a(href='#')
+					img(src='../../images/onb/2019/sp/content2.png', alt='')
+			.bpimage_caption 画像のキャプションが入ります。画像のキャプションが入ります。
+
+
+
+
+h4 カルーセル
+.bpimage_center
+	.bpimage_title カルーセルタイトル
+	.bpimage_image_slider
+		- for (var i = 0; i < 2; ++i)
+			.bpimage_image
+				a(href='#')
+					img(src='../../images/onb/2019/sp/content2.png', alt='')
+			.bpimage_image
+				a(href='#')
+					img(src='../../images/onb/2019/sp/301_feature_sp.png', alt='')
+	
+
+
+
+
+h4 動画
+.bpbox_center
+	.bpimage_center(style='width:311px;')
+		.bpimage_title セミナームービー
+		.bpimage_image
+			iframe(src='https://www.youtube.com/embed/tgbNymZ7vqY', width='311', height='233')
+
+h4 表
+.bptable
+	.bptable_title 表1●表のタイトル
+	.bptable_caption ここに説明文をここに説明文を入れる。
+		br
+		| ここに説明文を入れる。ここに説明文を入れる。ここに説明文を入れる。ここに説明文を入れる。
+	table(style='width:100%;')
+		tbody
+			tr
+				th(scope='col')  
+				th(scope='col') 面積
+				th(scope='col') 比率
+				th(scope='col') 売り上げ
+				th(scope='col') 指数
+				th(scope='col') 評価
+			tr
+				th(scope='row') 北海道
+				td 600
+				td 1.56
+				td 0,000
+				td 600
+				td ○
+			tr
+				th(scope='row') 東北
+				td 800
+				td 2.36
+				td 0,000
+				td 800
+				td ●
+			tr
+				th(scope='row') 関東
+				td 900
+				td 5.36
+				td 0,000
+				td 900
+				td △
+			tr
+				th(scope='row') 中部
+				td 400
+				td 9.36
+				td 0,000
+				td 400
+				td ■
+
+h3 プロフィール
+h4 プロフィール
+.bpprofile
+	.bpprofile_profile
+		span.bpprofile_name 谷口 徹也
+		span.bpprofile_small_name たにぐち・てつや
+		br
+		span.bpprofile_position
+			| 日経ビジネスベーシック編集長
+	.bpprofile_text
+		| 1989年京大卒、同年日本経済新聞社入社。流通、農政、行政改革、保険会社、中国経済などの取材を経て2007年よ…
+		a(href='#') もっと読む
+
+
+h4 プロフィール（顔写真付き）
+.bpprofile_photo
+	.bpprofile_profile
+		.avatarCicrle.sizeSeventyTwo
+			img(src='/images/onb/2019/Oval.png', alt='')
+		.bpprofile_persional
+			span.bpprofile_name 谷口 徹也
+			br
+			span.bpprofile_small_name たにぐち・てつや
+			br
+			span.bpprofile_position
+				| 日経ビジネスベーシック編集長
+	.bpprofile_text
+		| 1989年京大卒、同年日本経済新聞社入社。流通、農政、行政改革、保険会社、中国経済などの取材を経て2007年よ…
+		a(href='#') もっと読む
+
+h4 インタビュー用プロフィール
+.bpinterview
+	.bpinterview_profile
+		span.bpinterview_name 谷口 徹也
+		span.bpinterview_small_name たにぐち・てつや
+		br
+		span.bpinterview_position
+			| 日経ビジネスベーシック編集長
+		br
+	.bpinterview_text
+		| プロフイールテキストが入ります。1989年京大卒、同年日本経済新聞社入社。流通、農政、行政改革、保険会社、中国経済など
+
+
+h3 リスト/インタビュー/質問
+h4 リスト
+
+ul.square
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ul.dash
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ul.disc
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ul.dash
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ul.circle
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ul.dash
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ol
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ol
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+ol
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ol.upperAlpha
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ol
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ol.lowerAlpha
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ol
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ol.upperRoman
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ol
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+ol.circledDecimal
+	li 日経BPネット
+	li 日経ビジネスオンライン
+		ol
+			li インデントインデント
+			li インデントインデント
+				ul.dash
+					li インデントインデント
+					li インデントインデント
+	li 日経BPネット
+	li 日経ビジネスオンライン
+	li 日経BPネット
+	li 日経ビジネスオンライン
+	li 日経BPネット
+	li 日経ビジネスオンライン
+	li 日経BPネット
+	li 日経ビジネスオンライン
+
+h4 対談、インタビュー
+p
+	span.speaker01 桃太郎
+	| ：きびだんごをどうぞ。
+	br
+	span.speaker02 浦島太郎
+	| ：玉手箱、ありがとうございます。
+	br
+	span.speaker03 金太郎
+	| ：玉手箱、ありがとうございます。
+	br
+	span.speaker04 高橋さん
+	| ：山で一番強い熊だ！
+	br
+	span.speaker05 田中さん
+	| ：きびだんごをどうぞ。
+	br
+	span.speaker06 山田さん
+	| ：玉手箱、ありがとうございます。
+	br
+	span.speaker07 鈴木さん
+	| ：山で一番強い熊だ！
+	br
+	span.speaker08 佐藤さん
+	| ：きびだんごをどうぞ。
+	br
+	span.speaker09 記者など
+	| ： ありがとうございました。
+
+.bpimage_caption ※最大、9人まで対応
+
+h4 質問と回答
+p 日経BP標準CSSガイドラインに準ずる。
+
+h3 囲み/引用/コード
+
+h4 囲み記事 1
+.bpbox
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+
+h4 囲み記事2
+.bpbox2
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+
+h4 囲み記事3
+.bpbox3
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+
+h4 囲み記事4
+.bpbox4
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+
+h4 囲み記事5
+.bpbox5
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+
+
+h4 囲み記事6
+.bpbox6
+	.bpbox_title 松下電器、テレビ向けサイト「Tナビ」で株価情報を充実
+	.bpbox_text
+		| 囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。囲い記事の内容が入ります。
+	
+h4 引用
+p 引用であることをHTMLの論理構造として明確化します。著作権の観点だけでなく、SEOでも重要であるため、必ず実装してください。
+blockquote
+	h3 客単価が2倍に上昇
+	p
+		| 接客の重要ツールが、スマートフォンアプリ「POCKET PARCO」（図1）。来店前から来店後まで、手のひらの上で顧客に接する。
+		br
+		| 引用テキスト引用テキスト引用テキスト引用テキスト引用テキスト
+.bpquote_caption 〇〇〇〇記事「IoTやWeb接客で、“今”を逃さず顧客をつかむ」から引用
+
+
+h4 コード
+p 
+	| 日経BP標準CSSガイドラインに準ずる。
+	br
+	| プログラムコードやコマンドラインの内容を記述する場合に使います。本文と同じスタイル、明るいスタイル、暗いスタイルの3種類を定義してください。
+	br
+
+
+h3 記事中の埋め込み
+h4 エンベット（コメント）
+.commentAdd
+	.authorComment
+		.authorCommentAvatar
+			.avatarCicrle
+				img(src='../../images/onb/2019/avatarCommentIcon.png', alt='')
+		.authorCommentInfo
+			.authorCommentName 佐野 祐介
+			.authorCommentLevel 日本経済新聞記者
+		.authorCommentText コメント内容コメント内容コメント内容コメント内容コメント内容コメント内容コメント内容 コメント内容コメント内容コメント内容コメント内容コメント内容コメント
+		time 2018.10.3
+		.authorCommentLike
+			img(src='../../images/onb/2019/likeCommentIcon.png', alt='')
+			span 54
+
+
+h3 関連フォーラム
+include ../../shared/component/_related_forum_list
+
+
+h3 訂正/注釈/参考
+h4 訂正文
+.bpteisei_box
+	.bpteisei
+		b ＊変更履歴
+		br
+		|  ○○○で×××としていましたが、
+		br
+		| 正しくは●●●です。お詫びして訂正します。本文は修正済みです。 [20xx/xx/xx xx:xx]
+		br
+		br
+
+h4 注釈
+.bpannotation ＊1：注釈のテキスト注釈のテキスト
+br
+br
+h4 参考文献
+.bpreference
+	b ＊参考文献
+	br
+	| ケビン・フライバーグ , ジャッキー・フライバーグ著，小幡照雄訳，『破天荒！サウスウエスト航空―驚愕の経営』，日経BP社，1997年.
+	br
+	br
+h4 協力（広告）
+.bpword
+	| 協力
+	br
+	| 株式会社 XXXXXXXXXXX
+br
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			span.dot ...
+		li.activity
+			a(href='#') 5
+		li
+			span.dot ...
+		li
+			a(href='#') 18
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+br
+br
+br
+	
+nav.pagenation
+	ul.pagenationList
+		li.activity
+			span 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 4
+		li
+			span.dot ...
+		li
+			a(href='#') 18
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li.activity
+			span 2
+		li
+			a(href='#') 3
+		li
+			span.dot ...
+		li
+			a(href='#') 18
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			span.dot ...
+		li.activity
+			span 3
+		li
+			span.dot ...
+		li
+			a(href='#') 18
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			span.dot ...
+		li
+			a(href='#') 16
+		li.activity
+			span 17
+		li
+			a(href='#') 18
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			span.dot ...
+		li
+			a(href='#') 15
+		li
+			a(href='#') 16
+		li
+			a(href='#') 17
+		li.activity
+			span 18
+
+br
+br
+br
+
+nav.pagenation
+	ul.pagenationList
+		li.activity
+			span 1
+		li
+			a(href='#') 2
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li.activity
+			span 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+nav.pagenation
+	ul.pagenationList
+		li.activity
+			span 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 4
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			a(href='#') 2
+		li.activity
+			span 3
+		li
+			a(href='#') 4
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 4
+		li.activity
+			span 5
+
+
+
+nav.pagenation
+	ul.pagenationList
+		li.activity
+			span 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 4
+		li
+			a(href='#') 5
+		li
+			a(href='#') 6
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li.activity
+			span 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 5
+		li
+			a(href='#') 6
+		li
+			a(href='#').pagenationNextButton
+				i.icon.iconRightArrow
+
+nav.pagenation
+	ul.pagenationList
+		li
+			a(href='').pagenationPreviewButton
+				i.icon.iconLeftArrow
+		li
+			a(href='#') 1
+		li
+			a(href='#') 2
+		li
+			a(href='#') 3
+		li
+			a(href='#') 4
+		li
+			a(href='#') 5
+		li.activity
+			span 6

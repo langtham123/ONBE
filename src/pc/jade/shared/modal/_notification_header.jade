@@ -1,0 +1,54 @@
+- var itemNotifications = []
+- itemNotifications.push({img:'../../images/onb/2019/oval7.png',title:'フェルディナント・ヤマグチ',titleSpan:'さんの記事',description:'レクサスLSが狙うユーザーは若き“50代”',active: '1',user: '1'})
+- itemNotifications.push({img:'../../images/onb/2019/iconFeature.png',title:'日経ビジネス読み解きヒント',titleSpan:'の連載に新しい記事が投稿されました（2行ver）', description:'変わる生産性の評価軸、働き方を見直そう '})
+- itemNotifications.push({img:'../../images/onb/2019/chat_1.png',title:'オンラインインターン',titleSpan:'の議題', description:'プロ経営者に聞こう！仕事、家族、人生とは？'})
+- itemNotifications.push({img:'../../images/onb/2019/chat_1.png',title:'プロ経営者に聞こう！仕事、家族、人生とは？',titleSpan:'', description:'新しいコメント“韓国大統領は北の使い走りと報道した米メディア。韓国大統領は北との平和の使者と報道したが…'})
+- itemNotifications.push({img:'../../images/onb/2019/oval10.png',title:'長谷川 明',titleSpan:'さんがイイネ！しました', description:'韓国大統領は北の使い走りと報道した米メディア。韓国大統領は北との平和の使者と報道した韓国メディア。…',user: '1'})
+- itemNotifications.push({img:'../../images/onb/2019/oval11.png',title:'岩橋那奈子',titleSpan:'さんがあなたのコメントに対して返信しました（2行ver）', description:'“中国は失業者が多い為に、ウイグルやチベットだけでなく一帯一路の流れに乗って海外で働く労働者たちの環境は…”',user: '1'})
+
+.modalNotification
+    ul
+        for item in itemNotifications
+            if item.active
+                li.noitice.noiticeIsActive
+                    a.itemNotice(href='#')
+                        if item.user
+                            .itemAvata.avatarCicrle.sizeTwentyFour
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                        else
+                            .itemAvata
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                    a.itemDate(href='#')
+                        p.date
+                            | 2018.MM.DD
+                            span NB
+            else
+                li.noitice
+                    a.itemNotice(href='#')
+                        if item.user
+                            .itemAvata.avatarCicrle.sizeTwentyFour
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                        else
+                            .itemAvata
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                    a.itemDate(href='#')
+                        p.date
+                            | 2018.MM.DD
+                            span NB
+    a.notificationSeeMore(href='#') 通知をもっと見る

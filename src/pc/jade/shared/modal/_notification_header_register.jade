@@ -1,0 +1,51 @@
+- var itemNotifications = []
+- itemNotifications.push({img:'../../images/onb/2019/oval7.png',title:'フェルディナント・ヤマグチ',titleSpan:'さんの記事',description:'レクサスLSが狙うユーザーは若き“50代”',active: '1',user: '1'})
+- itemNotifications.push({img:'../../images/onb/2019/iconFeature.png',title:'日経ビジネス読み解きヒント',titleSpan:'の連載に新しい記事が投稿されました（2行ver）', description:'変わる生産性の評価軸、働き方を見直そう '})
+- itemNotifications.push({img:'../../images/onb/2019/chat_1.png',title:'オンラインインターン',titleSpan:'の議題', description:'プロ経営者に聞こう！仕事、家族、人生とは？'})
+
+.modalNotification.modalRequiredRegister
+    ul
+        for item in itemNotifications
+            if item.active
+                li.noitice.noiticeIsActive
+                    .itemNotice
+                        if item.user
+                            .itemAvata.avatarCicrle.sizeTwentyFour
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                        else
+                            .itemAvata
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                    .itemDate
+                        p.date
+                            | 2018.MM.DD
+                            span NB
+            else
+                li.noitice
+                    .itemNotice
+                        if item.user
+                            .itemAvata.avatarCicrle.sizeTwentyFour
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                        else
+                            .itemAvata
+                                img(src=item.img,alt='')
+                            .itemContent
+                                p.title!=item.title
+                                    span さんの記事
+                                p.desciption=item.description
+                    .itemDat
+                        p.date
+                            | 2018.MM.DD
+                            span NB
+    include ../component/_register_for_use

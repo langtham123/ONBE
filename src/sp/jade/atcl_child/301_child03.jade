@@ -1,0 +1,43 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンク
+
+block content
+	section.giftContent
+		.panelIndent
+			include ../shared/component/_header_gift
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/duplicate/_header
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/_description_text
+				
+				include ../shared/leaf_content/duplicate/_main_text
+				include ../shared/leaf_content/read_more/_read_more_fade
+				include ../shared/leaf_content/_text_end
+				include ../shared/leaf_content/_leaf_tag
+			section
+				.panelIndent
+					include ../shared/leaf_content/_comment
+			section
+				.panelIndent
+					include ../shared/leaf_content/_progress_bar
+			section
+				.panelIndent
+					include ../shared/leaf_content/_past_comment
+
+	include ../shared/leaf_content/popup/_pop_up_05
+	include ../shared/leaf_content/popup/_pop_up_06
+	include ../shared/leaf_content/popup/_pop_up_07

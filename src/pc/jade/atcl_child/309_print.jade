@@ -1,0 +1,21 @@
+extends ../shared/layout_print.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンクPC
+
+block content
+	aside.asidePrint
+		header.leafHeader
+			include ../shared/leaf_content/309_print/_header_pc
+		.articleBody
+			include ../shared/leaf_content/309_print/_description_text
+			include ../shared/leaf_content/309_print/_main_text_pc

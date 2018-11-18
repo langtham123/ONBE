@@ -1,0 +1,99 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 307_オンラインゼミナール子記事_01 受講前PC
+
+block content
+	- var crumbs = ["技術経営――日本の強み・韓国の強み", "爆走中国EV、電池業界に起きている異変"];
+	include ../shared/component/_crumb
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/307/_header_pc_307
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/_description_text_2
+				include ../shared/leaf_content/307/_main_text_fade_2nd
+				include ../shared/leaf_content/307/_read_more_login_307
+				include ../shared/leaf_content/_button_link_2
+				include ../shared/leaf_content/_leaf_tag
+			hr.hrGray
+			section
+				include ../shared/leaf_content/_comment
+			section
+				include ../shared/leaf_content/_progress_bar
+			section.articleFeatureBox
+				include ../shared/component/_serial_box_2
+		section
+			- var title = 'あなたにおすすめ'
+			include ../shared/component/_title_box_2
+			include ../shared/component/_recommend_article
+
+	include ../shared/_aside_right
+		block aside_right
+			- var img_name = 'ADRectangle.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				- var title = 'アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_ranking
+				- var url = '#', text = '別のランキング'
+				include ../shared/aside_right/_other_link
+			
+			- var img_name = 'ADRectangle2.png'
+			include ../shared/aside_right/_ad_rectangle
+			
+			section
+				- var title = '有料アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_paid_ranking
+				- var url = '#', text = '6位以下・別のランキング'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ書籍・ムック'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_book
+				- var url = '#', text = '書籍・ムック一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめセミナー'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_seminar
+				- var url = '#', text = '開催セミナー一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ情報'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_info
+
+			section
+				include ../shared/aside_right/_comment
+				- var url = '#', text = '光るコメント一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = '記事を探す'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_search_box
+
+			- var img_name = 'ADRectangle3.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				include ../shared/aside_right/_business_trend
+
+			section
+				include ../shared/aside_right/_dag_ad

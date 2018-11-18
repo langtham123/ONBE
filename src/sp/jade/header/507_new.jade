@@ -1,0 +1,37 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+
+block lib_js
+	script(src='../../js/onb/2019/lib/simplebar.js')
+
+block title
+	title 507_記事検索_01start
+
+block header
+	include ../shared/body_header/_body_header_1
+
+block content
+	article
+		.articleList
+			section.panelIndent
+				form.searchKeyWords(method='',action='')
+					.inputWithIconNew
+						input(type='text',placeholder='アマゾン')
+						i.icon.iconSearchRed
+						a.linkCancel(href='#') キャンセル
+					.headerSearchList
+						p キャンペーンタグ
+						- var keywords = ["#政治・国際", "#情報・通信",'#製造','#スキル・ライフ','#小売り','#カテゴリタグ','#創業家','#ウォルマート','#AI','#V字回復','#サイバーセキュリティー','#デモ','#トランプ','#創業家','#DeNA','#満員電車','#ウォルマート','#デザイン思考','#新規参入'];
+						ul
+							for key in keywords
+								li
+									a(href='#')= key
+			section.panelIndent
+				.keywordsBlock
+					p.KeyTitle キャンペーンタグ
+					- var listKeyWords = ['#政治・国際','#情報・通信','#製造','#スキル・ライフ','#小売り','#創業家','#ウォルマート', '#AI','#V字回復','#サイバーセキュリティー','#トランプ','#DeNA','#満員電車','#ウォルマート','#デザイン思考','#新規参入']
+					ul.listKeywords
+						- for key in listKeyWords
+							li
+								a(href='#')=key

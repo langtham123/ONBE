@@ -1,0 +1,24 @@
+- var articleItems = []
+- articleItems.push({category:'[日経BP総研中堅・中小企業ラボ]', category_title: '戦国三英傑に学ぶ人材獲得・活用術', title:'第２回「前向き人生に損はなし」がモットー。意欲的な人材育成に注力',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[親記事タイトルが入ります親記事タイトル親記事タイトルが入ります親記事タイトル]', category_title: '二段目タイトルが入ります。二段目タイトルが入ります。', title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[日経BP総研中堅・中小企業ラボ]', category_title: '戦国三英傑に学ぶ人材獲得・活用術', title:'第２回「前向き人生に損はなし」がモットー。意欲的な人材育成に注力',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[親記事タイトルが入ります親記事タイトル親記事タイトルが入ります親記事タイトル]', category_title: '二段目タイトルが入ります。二段目タイトルが入ります。', title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[日経BP総研中堅・中小企業ラボ]', category_title: '戦国三英傑に学ぶ人材獲得・活用術', title:'第２回「前向き人生に損はなし」がモットー。意欲的な人材育成に注力',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[親記事タイトルが入ります親記事タイトル親記事タイトルが入ります親記事タイトル]', category_title: '二段目タイトルが入ります。二段目タイトルが入ります。', title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[日経BP総研中堅・中小企業ラボ]', category_title: '戦国三英傑に学ぶ人材獲得・活用術', title:'第２回「前向き人生に損はなし」がモットー。意欲的な人材育成に注力',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+- articleItems.push({category:'[親記事タイトルが入ります親記事タイトル親記事タイトルが入ります親記事タイトル]', category_title: '二段目タイトルが入ります。二段目タイトルが入ります。', title:'タイトルが入ります。タイトルが入ります。タイトルが入ります。32w',description: '一切の前提条件なしに、年末までに平和条約を締結しよう――。ロシアのプーチン大統領が今', img:'../../images/onb/2019/spec_2_list.png'})
+section
+    ul.listArticle
+        li.listArticleTitle
+                p バックナンバー
+                    span [PR]
+        for item in articleItems
+            li
+                a(href='#')
+                    .articleContent
+                        p.categoryBold= item.category
+                        p.category= item.category_title
+                        p.title= item.title
+                        p.description= item.description
+                    .articleThumb
+                        img(src= item.img,alt='')

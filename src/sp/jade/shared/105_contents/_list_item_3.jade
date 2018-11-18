@@ -1,0 +1,33 @@
+- var items = []
+- items.push({img:'../../images/onb/2019/sp/oval7.png',key:'ok',title:'フェルディナント・ヤマグチ',titleSpan:'さんの記事',description:'レクサスLSが狙うユーザーは若き“50代”'})
+- items.push({img:'../../images/onb/2019/sp/coppy_1.svg',title:'日経ビジネス読み解きヒント',titleSpan:'の連載に新しい記事が投稿されました', description:'変わる生産性の評価軸、働き方を見直そう '})
+- items.push({img:'../../images/onb/2019/sp/chat_1.svg',title:'オンラインインターン',titleSpan:'の議題', description:'変わる生産性の評価軸、働き方を見直そう '})
+- items.push({img:'../../images/onb/2019/sp/oval8.png',key:'ok',title:'小田嶋 隆',titleSpan:'さんのコメント', description:'“低出産率を目標にしてきたって現代日本からしたら贅沢な悩みのように感じる”'})
+- items.push({img:'../../images/onb/2019/sp/oval9.png',key:'ok',title:'小島 慶子',titleSpan:'さんのブログ', description:'「ああはならないで」教育熱心な親の本音'})
+- items.push({img:'../../images/onb/2019/sp/chat_1.svg',title:'プロ経営者に聞こう！仕事、家族、人生とは？',titleSpan:'', description:'新しいコメント “韓国大統領は北の使い走りと報道した米メディア。韓国大統領は北との平和の使者と報道した韓国メディア。日本のメディアの報道は前者…"'})
+- items.push({img:'../../images/onb/2019/sp/oval10.png',key:'ok',title:'長谷川 明',titleSpan:'さんがイイネ！しました', description:'"韓国大統領は北の使い走りと報道した米メディア。韓国大統領は北との平和の使者と報道した韓国メディア。日本のメディアの報道は前者か後者かといえ…'})
+- items.push({img:'../../images/onb/2019/sp/oval11.png',key:'ok',title:'岩橋 那奈子',titleSpan:'さんが返信しました', description:'"西の帝国･ローマの皇帝は「第一人者」であって、つまりは市民のトップである『人間』だったから、神の下に降るのは別に変でもなかった。でも中国の…"'})
+- items.push({img:'../../images/onb/2019/sp/oval12.png',key:'ok',title:'大村 真琴',titleSpan:'さんにフォローされました', description:''})
+- items.push({img:'../../images/onb/2019/sp/i.svg',title:'<span>あなたのコメントが</span>光るコメント',titleSpan:'に選ばれました', description:''})
+- items.push({img:'../../images/onb/2019/sp/i.svg',title:'<span>編集部があなたを</span>アンバサダー',titleSpan:'に選びました', description:''})
+- items.push({img:'../../images/onb/2019/sp/i.svg',title:'<span>お知らせ：</span>弊社ウェブサイトのセキュリティ強化（TLS1.0/TLS1.1のサポート終',titleSpan:'', description:''})
+- items.push({img:'../../images/onb/2019/sp/i.svg',title:'<span>あなたのコメントが編集部によって</span>削除されました',titleSpan:'', description:''})
+for item in items
+    li.noitice
+        .panelIndent
+            a(href="#")
+                .itemNotice
+                    if item.key
+                        .itemAvata.avatarCicrle.sizeTwentyFour
+                            img(src=item.img, alt='')
+                    else
+                        .itemAvata
+                            img(src=item.img, alt='')
+                    .itemContent
+                        h5.title!=item.title
+                            span さんの記事
+                        p.desciption=item.description
+                .itemDate
+                        p.date
+                            | 2018.MM.DD
+                            span NB

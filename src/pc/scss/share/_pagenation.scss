@@ -1,0 +1,67 @@
+nav.pagenation {
+	margin-top: 40px;
+    margin-bottom: 60px;
+	.pagenationList {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0;
+		li {
+			padding-left: 0;
+			a:hover {
+				background-color: #E6001E;
+				color: #fafafa;
+			}
+			a.pagenationNextButton:hover .icon{
+				background: url("../../../images/onb/2019/nextReadMoreWhite.png") no-repeat;
+				background-size: 100%;
+				width: 14px;
+				height: 12px;
+				position: relative;
+				top: -2px;
+			}
+			a.pagenationPreviewButton:hover .icon{
+				background: url("../../../images/onb/2019/nextReadMoreWhite.png") no-repeat;
+				background-size: 100%;
+				width: 14px;
+				height: 12px;
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+				position: relative;
+				top: -2px;
+			}
+		}
+		li:not(:first-child) {
+			margin-left: 6px;
+		}
+		.activity {
+			a, span {
+				background-color: #E6001E;
+				color: #fafafa;
+			}
+		}
+
+		a, span {
+			width: 38px;
+			height: 38px;
+			text-align: center;
+			line-height: 40px;
+			display: block;
+			border-radius: 2px;
+			background-color: #fafafa;
+			color: #e6001e;
+			font-weight: bold;
+		}
+		span.dot {
+			background: #ffffff;
+			color: #242424;
+		}
+		.iconLeftArrow, .iconRightArrow {
+			vertical-align: middle;
+		}
+	}
+}

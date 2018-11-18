@@ -1,0 +1,12 @@
+header.panelIndent
+	nav.localNavi
+		a.burgerMenuToggle( href='#localNaviMenu', id="toggle")
+			i.icon.iconBarRed
+			span
+				| メニュー
+		block burgerMenu
+			include ../burger_menu/_menu_02
+	.siteLogo
+		a(href='/')
+			img(src='../../images/onb/2019/sp/logo_sp.svg', alt='')
+	a.btnApplicationHeader(href='#') 会員登録

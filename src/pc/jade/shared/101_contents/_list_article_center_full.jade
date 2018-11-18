@@ -1,0 +1,47 @@
+- var articleItems = []
+- articleItems.push({category:'アマゾンは怖くない　『選ばれる小売り』',title:'米国発、焦土の先の未来。生存競争から生まれる知恵', comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'iconLockClose',chart:false, flag:''})
+- articleItems.push({category:'BOOK　話題の本、注目の本',title:"「死」の側から照らす「生」の輪郭。THIS WEEK'S THEME 日本の夏", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'',chart:true, flag:''})
+- articleItems.push({category:'もやもやニュース、すっきり解説',title:"PERとPBR、何が違う？　株価水準を測る2つの指標", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'iconLockClose',chart:false, flag:''})
+- articleItems.push({category:'アマゾンは怖くない　『選ばれる小売り』',title:"米国発、焦土の先の未来。生存競争から生まれる知恵", comment:'フェルディナント・ヤマグチさんなど<span>22人が参加</span>',like:'',img:'../../images/onb/2019/search_map.png',lock:'',chart:false, flag:'raise'})
+- articleItems.push({category:'アマゾンは怖くない　『選ばれる小売り』',title:"米国発、焦土の先の未来。生存競争から生まれる知恵", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'',chart:false, flag:''})
+- articleItems.push({category:'企業研究',title:"「一発屋」で終わらない。小林製薬｜日用品・医薬品", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'',chart:true, flag:''})
+- articleItems.push({category:'企業研究',title:"「一発屋」で終わらない。小林製薬｜日用品・医薬品", comment:'#新市場',like:'#マーケティング',img:'../../images/onb/2019/Rectangle6.png',lock:'',chart:false, flag:'seminar'})
+- articleItems.push({category:'日経ビジネス読み解きヒント',title:"「体験」から始まるストーリー。店舗が提供する価値とは？", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'iconLockOpen',chart:false, flag:''})
+- articleItems.push({category:'PR：タイトルが入ります。',title:"インフィード広告のタイトルが入ります。インフィード広告のタイトルが入ります。", comment:'',like:'',img:'../../images/onb/2019/img01.png',lock:'',chart:false, flag:''})
+- articleItems.push({category:'親記事タイトルが入ります親記事タイト２２文字',title:"過ぎたるは及ばざるを隠す", comment:'12',like:'76%',img:'../../images/onb/2019/img01.png',lock:'iconLockOpen',chart:true, flag:''})
+section
+    ul.listArticle
+        for item in articleItems
+            li
+                a(href='#')
+                    .articleContent
+                        p.category
+                            case item.flag
+                                when 'raise'
+                                    span.raise Raise
+                                when 'seminar'
+                                    span.seminar ゼミナール
+                            = item.category
+                        p.title= item.title
+                            if item.lock != ''
+                                i.icon(class=item.lock)
+                        .likeAndComment
+                            if item.comment != '' && item.flag != 'seminar'
+                                img(src='../../images/onb/2019/commentIcon.png',alt='')
+                                span.firstElement!= item.comment
+
+                            if item.comment == '#新市場'
+                                span.firstElement.null #新市場
+
+                            if item.like != '' && item.flag != 'seminar'
+                                img(src='../../images/onb/2019/likeIcon.png',alt='')
+                                span= item.like
+
+                            if item.like == '#マーケティング'
+                                span.null #マーケティング
+
+                            if item.chart
+                                i.icon.iconchart
+                                span.chartText アクセス上位
+                    .articleThumb
+                        img(src= item.img,alt='')

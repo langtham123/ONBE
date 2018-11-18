@@ -1,0 +1,14 @@
+- var articleItems2 = []
+- articleItems2.push({category:'親タイトル',title:'テキスト見出しのみのリスト。テキスト見出しのみのリスト。テキ32w'})
+- articleItems2.push({category:'親タイトル',title:'テキスト見出しのみのリスト。テキスト見出しのみのリスト。テキ32w'})
+- articleItems2.push({category:'親タイトル',title:'テキスト見出しのみのリスト。テキスト見出しのみのリスト。テキ32w'})
+- articleItems2.push({category:'親タイトル',title:'テキスト見出しのみのリスト。テキスト見出しのみのリスト。テキ32w'})
+section
+    ul.listArticleSecond
+        for item in articleItems2
+            li
+                a(href='#')
+                    p.category= item.category
+                    p.title= item.title
+
+    a.newArticleList(href='#') 新着記事一覧 >

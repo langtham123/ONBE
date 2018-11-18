@@ -1,0 +1,6 @@
+.commentBox
+	h5.numberComment 52件のコメント
+	.commentContent(data-simplebar,data-simplebar-auto-hide="false").commentContentNoneShadow
+		ul
+			- for (var i=0; i<3; i++)
+				include _raise_comment_item

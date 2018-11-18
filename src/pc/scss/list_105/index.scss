@@ -1,0 +1,67 @@
+@import "../config/color";
+@import "../config/font_size";
+
+header.myPageHeader{
+  width: 100%;
+  display: inline-block;
+
+  .myPageHeaderLeft {
+    float: left;
+    display: flex;
+    .myPageHeadLeftImg {
+      height: 72px;
+      .avatarCicrle {
+        margin-right: 18px;
+      }
+    }
+
+    .myPageHeadLeftContent {
+      height: 72px;
+      p {
+        line-height: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        &.textAuthortitle {
+          color: $color--666666;
+        }
+      }
+      h5 {
+        font-size: $font--24;
+        line-height: 1.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        span {
+          font-size: $font--17;
+          font-weight: normal;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .myPageHeaderRight {
+    float: right;
+    margin-top: 15px;
+    a {
+      &.btn {
+        width: 68px;
+        height: 30px;
+        border-radius: 2px;
+        border: 1px solid;
+        border-color: $color--dddddd;
+        font-size: $font--15;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        color: $color--E6001E;
+      }
+      img {
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@import "list_1";

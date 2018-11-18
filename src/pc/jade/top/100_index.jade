@@ -1,0 +1,69 @@
+extends ../shared/layout_100.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/swiper.min.css', rel='stylesheet')
+block lib_js
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/swiper.min.js')
+
+block title
+	title 101_TOP ログイン済み（有料会員）PC
+
+block burgerMenu
+	include ../shared/burger_menu/_menu_01
+
+block content
+	include ../shared/101_contents/_list_keywords
+	article.centerArticle
+		.articleList
+			include ../shared/101_contents/_premium_text_ad_center_2
+			include ../shared/101_contents/_list_article_center_full
+			include ../shared/101_contents/_list_article_center_2
+
+	include ../shared/_aside_left_3
+	include ../shared/_aside_right_3
+
+
+block content_full_width
+	include ../shared/101_contents/_full_content_raise
+
+block content_2
+	article
+		include ../shared/101_contents/_online_seminar
+		include ../shared/101_contents/_glowing_comment
+		include ../shared/101_contents/_magazine
+		include ../shared/101_contents/_recommended_information
+	aside.asideRight.asideRight2
+		section
+			- var title = '有料アクセスランキング'
+			include ../shared/aside_right/_sub_col_head
+			include ../shared/aside_right/_tab_paid_ranking
+			- var url = '#', text = '6位以下・別のランキング'
+			include ../shared/aside_right/_other_link
+
+		- var img_name = 'ADRectangle2.png'
+		include ../shared/aside_right/_ad_rectangle
+
+		section
+			- var title = 'おすすめ書籍・ムック'
+			include ../shared/aside_right/_sub_col_head
+			include ../shared/aside_right/_recommend_book
+			- var url = '#', text = '書籍・ムック一覧'
+			include ../shared/aside_right/_other_link
+
+		section
+			- var title = 'おすすめセミナー'
+			include ../shared/aside_right/_sub_col_head
+			include ../shared/aside_right/_recommend_seminar
+			- var url = '#', text = '開催セミナー一覧'
+			include ../shared/aside_right/_other_link
+
+		section
+			include ../shared/aside_right/_business_trend
+		section
+			include ../shared/aside_right/_rank_posts
+		
+		- var img_name = 'ADRectangle3.png'
+		include ../shared/aside_right/_ad_rectangle
+		section
+			include ../shared/aside_right/_dag_ad

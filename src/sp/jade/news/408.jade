@@ -1,0 +1,62 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/owl.carousel.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick-theme.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/bootstrap-datepicker.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/owl.carousel.min.js')
+	script(src='../../js/onb/2019/lib/slick.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+	script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+	script(src='../../js/onb/2019/lib/bootstrap-datepicker.min.js')
+	script(src='../../js/onb/2019/lib/bootstrap-datepicker.ja.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンク
+
+block content
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/_header
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/_description_text
+				
+				include ../shared/leaf_content/_main_text
+				include ../shared/leaf_content/_text_end
+				include ../shared/leaf_content/_leaf_tag
+			section
+				.relatedForumListHeader
+					h2 関連フォーラム
+				.panelIndent
+					include ../shared/component/_related_forum_list
+			section
+				.panelIndent
+					include ../shared/leaf_content/_comment
+			section
+				.panelIndent
+					include ../shared/leaf_content/_progress_bar
+			section
+				.panelIndent
+					include ../shared/leaf_content/_past_comment
+			section
+				include ../shared/leaf_content/slider/_list
+			section
+				include ../shared/component/_feature_box
+			.popUpDate
+		include ../shared/leaf_content/popup/_pop_up_408
+
+	include ../shared/leaf_content/popup/_pop_up_05
+	include ../shared/leaf_content/popup/_pop_up_06
+	include ../shared/leaf_content/popup/_pop_up_07
+	include ../shared/leaf_content/popup/_pop_up_07_2nd
+	include ../shared/leaf_content/popup/_pop_up_08

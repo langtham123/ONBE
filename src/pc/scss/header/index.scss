@@ -1,0 +1,301 @@
+@import "../config/color";
+@import "../config/font_size";
+@import "globalNavi";
+@import "burgerMenu";
+@import "nofication";
+
+//@extend-elements
+//original selectors
+//#toggle span:after, #toggle span:before
+%extend_header_1 {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 12px;
+}
+
+//original selectors
+//#toggle span, #toggle span:after, #toggle span:before
+%extend_header_2 {
+	height: 2px;
+	width: 20px;
+	background-color: $color--E6001E;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+%cssHeader {
+	> header {
+		margin-bottom: 12px;
+		.loginBox {
+			ul.menuLogin {
+				height: 67px;
+				display: flex;
+				align-items: center;
+				li {
+					display: inline;
+					float: left;
+					width: 80px;
+					height: 100%;
+					font-size: $font--12;
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						height: 100%;
+						text-decoration: none;
+						transition: all linear 0.05s;
+						-webkit-transition: all linear 0.05s;
+						-moz-transition: all linear 0.05s;
+						font-weight: bold;
+						i {
+							display: block;
+							text-align: center;
+							margin-left: auto;
+							margin-right: auto;
+						}
+						img{
+							width: 36px;
+							height: 36px;
+						}
+					}
+					&.avatarUser{
+						position: relative;
+						@extend %cssNotification;
+					}
+					&:hover {
+						> a {
+							background-color: #f6f6f6;
+							.navButtonContent {
+								img {
+									//box-shadow: 0 0 0 1px #e6001e;
+								}
+							}
+						}
+					}
+				}
+				li.avatarUser {
+					&:hover {
+						> a {
+							.avatarCicrle {
+								border: 1px solid #e6001e;
+								box-sizing: border-box;
+							}
+						}
+					}
+				}
+				.navButtonContent {
+					position: relative;
+				}
+				.notificationAlert {
+					&:before{
+						content: '';
+						width: 9px;
+						height: 9px;
+						border-radius: 50%;
+						background: $color--E6001E;
+						position: absolute;
+						right: 0;
+						top: 0;
+						z-index: 99;
+					}
+				}
+			}
+
+		}
+		.siteLogo {
+			margin-left: auto;
+			margin-right: auto;
+			width: 193px;
+			h1 {
+
+			}
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+		section.searchBox {
+			float: left;
+			margin-left: 34px;
+			form {
+				input[type='text'] {
+					width: 244px;
+					height: 40px;
+					padding: 0;
+					border: 0;
+					outline: none;
+					//background: #f2f6f8;
+					color: $color--666666;
+					//border-radius: 4px;
+					border-bottom: solid 1px $color--E6001E;
+				}
+
+				.inputWithIcon {
+					position: relative;
+					input[type='text'] {
+						padding-left: 36px;
+						transition: 0.3s;
+						// &:hover{
+						// 	outline: inherit;
+						// 	border: 1px solid;
+						// 	border-color: $color--E6001E;
+						// 	transition: 0.3s;
+						// 	background: $color--FFFFFF;
+						// }
+						// &:focus{
+						// 	outline: inherit;
+						// 	border: 1px solid;
+						// 	border-color: $color--E6001E;
+						// 	transition: 0.3s;
+						// 	background: $color--FFFFFF;
+						// }
+					}
+					i {
+						position: absolute;
+						left: 10px;
+						top: 11px;
+						width: 18px;
+						height: 18px;
+						background-size: 100%;
+					}
+				}
+				.headerSearchList{
+					display: none;
+					z-index: 999;
+					position: fixed;
+					width: 645px;
+					box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+					border: 1px  solid $color--dddddd;
+					background-color: $color--FFFFFF;
+					padding: 13px 29px 7px 29px;
+					p{
+						font-size: $font--12;
+						line-height: 1.5;
+						letter-spacing: 0.2px;
+						font-weight: bold;
+						text-align: left;
+					}
+					ul{
+						display: flex;
+						flex-wrap: wrap;
+						margin-top: 13px;
+						li{
+							@extend %cssKeyword;
+							margin-bottom: 10px;
+							margin-right: 10px;
+							padding: 0 11px;
+							height: 28px !important;
+							line-height: 28px !important;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+		}
+		nav.localNavi {
+			float: left;
+			display: block;
+			width: 50px;
+			padding-top: 5px;
+			text-align: center;
+			span {
+				padding-top: 3px;
+			}
+			a {
+				font-size: 12px;
+				font-weight: bold;
+				span {
+					display: block;
+					margin-top: 13px;
+				}
+				i.icon.iconBarRed {
+					position: relative;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					@extend %extend_header_2;
+					&:after {
+						@extend %extend_header_1;
+						top: 6px;
+						@extend %extend_header_2;
+					}
+					&:before {
+						@extend %extend_header_1;
+						@extend %extend_header_2;
+					}
+				}
+				&.on {
+					i.icon.iconBarRed {
+						background-color: transparent;
+						&:before {
+							-webkit-transform: translateY(0) rotate(45deg);
+							-ms-transform: translateY(0) rotate(45deg);
+							transform: translateY(0) rotate(45deg);
+						}
+						&:after {
+							-webkit-transform: translateY(-12px) rotate(-45deg);
+							-ms-transform: translateY(-12px) rotate(-45deg);
+							transform: translateY(-12px) rotate(-45deg);
+						}
+					}
+
+				}
+			}
+			@extend %cssBugerMenu;
+		}
+
+	}
+}
+
+#wrapper {
+	@extend %cssHeader;
+
+}
+
+.headerFix {
+	@extend %cssHeader;
+	position: fixed;
+	width: 100%;
+	background: transparent;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.headerLogoOnly  {
+	.headerBlock {
+		border-bottom: 1px solid #EEEEEE;
+	}
+	.siteLogo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 59px;
+		margin: 0 auto;
+		img {
+			height: 24px;
+		}
+	}
+}
+
+
+.headerPrint  {
+	.siteLogo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 120px;
+		margin: 0 auto;
+	}
+}
+
+
+
+

@@ -1,0 +1,442 @@
+h1 {
+  &.articleAuthorTitle {
+    font-size: $font--20;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: $color--242424;
+    margin-bottom: 0px;
+  }
+}
+
+span {
+  &.articleAuthorTitle {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: #ff00a9;
+    text-align: right;
+    display: block;
+    //margin-top: 23px;
+    //margin-bottom: 10px;
+  }
+}
+
+//---- Author List
+.articleAuthor {
+  margin-bottom: 40px;
+}
+.articleAuthorHeader {
+  position: relative;
+  background-color: #fafafa;
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #e6001e;
+  }
+}
+.articleAuthorHeaderTitle {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: #666666;
+  padding: 10px 0;
+}
+ul.articleAuthorList2 {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  li {
+    line-height: 1;
+    border-bottom: solid 1px #eeeeee;
+    padding: 12px 0 10px 0;
+    position: relative;
+  }
+  .articleAuthorItem2 {
+    display: flex;
+    align-items: center;
+    .articleAuthorItem2Img {
+      padding-right: 20px;
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .articleAuthorItem2Content {
+    p {
+      margin: 0;
+      padding: 0;
+      &.name {
+        font-size: $font--17;
+        font-weight: 500;
+        line-height: 1.76;
+        letter-spacing: 0.2px;
+        color: $color--242424;
+        //span {
+        //  font-size: 12px;
+        //  font-weight: bold;
+        //  letter-spacing: 0.1px;
+        //  color: #af8d3a;
+        //  color: red;
+        //  padding-left: 8px;
+        //}
+      }
+      &.desciption {
+        font-size: $font--13;
+        font-weight: 500;
+        line-height: 1.69;
+        letter-spacing: 0.2px;
+        color: $color--666666;
+      }
+    }
+  }
+}
+ul.articleAuthorList {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  counter-reset: chapter 1;
+  li+li {counter-increment: chapter 1; list-style: none;}
+  li {
+    line-height: 1;
+    border-bottom: solid 1px #eeeeee;
+    padding: 12px 0 10px 0;
+    position: relative;
+    &:before, &:after {
+      position: absolute;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 2.5;
+      color: red;
+      margin-right: 5px;
+      right: 0;
+    }
+    &:before {
+      content: attr(chara_first);
+      top: 0;
+    }
+    &:after {
+      content: attr(chara_last);
+      bottom: 0;
+    }
+  }
+  .articleAuthorItem {
+    display: flex;
+    align-items: center;
+    .articleAuthorItemImg {
+      padding-right: 20px;
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .articleAuthorItemContent {
+      p {
+        margin: 0;
+        padding: 0;
+        &.name {
+          font-size: $font--17;
+          font-weight: 500;
+          line-height: 1.76;
+          letter-spacing: 0.2px;
+          color: $color--242424;
+          span {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.1px;
+            color: #af8d3a;
+            color: red;
+            padding-left: 8px;
+          }
+        }
+        &.desciption {
+          font-size: $font--13;
+          font-weight: 500;
+          line-height: 1.69;
+          letter-spacing: 0.2px;
+          color: $color--666666;
+
+        }
+      }
+  }
+}
+//
+//.articleColumn {
+//}
+//ul.articleColumnList {
+//  padding-left: 0;
+//  margin-bottom: 0;
+//  list-style: none;
+//  li {
+//    padding: 0;
+//    border-radius: 8px;
+//    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+//    background-color: #ffffff;
+//  }
+//  .articleColumnItem {
+//    margin-bottom: 20px;
+//  }
+//  .articleColumnItemImg {
+//    position: relative;
+//    width: 343px;
+//    height: 114px;
+//    img {
+//      width: 100%;
+//    }
+//    time {
+//      position: absolute;
+//      left: 10px;
+//      bottom: 15px;
+//      opacity: 0.8;
+//      background-color: #ffffff;
+//      font-size: $font--12;
+//      font-weight: 500;
+//      letter-spacing: 0.2px;
+//      color: $color--121212;
+//      padding: 2px 15px;
+//    }
+//    i {
+//      z-index: 1;
+//      bottom: 15px;
+//    }
+//  }
+//  .articleColumnItemContent {
+//    height: 46px;
+//    font-size: $font--18;
+//    font-weight: bold;
+//    line-height: 1.33;
+//    letter-spacing: 0.5px;
+//    color: $color--121212;
+//    padding: 3px 10px 15px 10px;
+//  }
+//}
+//
+//.articleAuthorSpecialHeader {
+//  margin-top: 15px;
+//  margin-bottom: 20px;
+//}
+//
+//.btnAuthorSpecial{
+//  position: relative;
+//  display: inline-block;
+//
+//  border: 1px solid $color--EEEEEE;
+//  border-radius: 15px;
+//  font-size: $font--15;
+//  font-weight: 500;
+//  color: $color--gold;
+//  &.specialLeft, &.specialRight {
+//    border: 1px solid red;
+//    display: inline-block;
+//    margin: 30px 0 50px;
+//  }
+//
+//}
+//.specialTop {
+//  padding: 8px 40px 8px 18px;
+//  i.iconArrowDown{
+//    position: absolute;
+//    top:11px;
+//    right: 20px;
+//    width: 10px;
+//  }
+//}
+//.specialLeft {
+//  float: left;
+//  padding: 8px 18px 8px 35px;
+//  i.iconPlayRightArrow{
+//    position: absolute;
+//    top:11px;
+//    left: 20px;
+//    -webkit-transform: rotate(180deg);
+//    -moz-transform: rotate(180deg);
+//    -ms-transform: rotate(180deg);
+//    -o-transform: rotate(180deg);
+//    transform: rotate(180deg);
+//  }
+//}
+//.specialRight {
+//  float: right;
+//  padding: 8px 35px 8px 18px;
+//  i {
+//    margin-left: 10px;
+//  }
+//  i.iconPlayRightArrow{
+//    position: absolute;
+//    top:11px;
+//  }
+//}
+//
+//ul.articleAuthorSpecialParent {
+//  padding-left: 0;
+//  margin-bottom: 0;
+//  list-style: none;
+//  li {
+//    padding: 0;
+//  }
+//  li:nth-child(odd) {
+//    background-color: rgba(147, 126, 40, 0.05);
+//  }
+//  .articleAuthorSpecialParentHeader {
+//    font-size: $font--20;
+//    font-weight: bold;
+//    line-height: 1.4;
+//    letter-spacing: 0.2px;
+//    color: $color--121212;
+//    padding-top: 23px;
+//    padding-bottom: 15px;
+//    &:before {
+//      content: '';
+//      display: inline-block;
+//      width: 12px;
+//      height: 12px;
+//      background-color: #937e28;
+//      margin-right: 12px;
+//    }
+//  }
+//}
+//ul.articleAuthorSpecialChild {
+//  padding-left: 0;
+//  margin-bottom: 0;
+//  li {
+//    padding: 0;
+//    background-color: inherit !important ;
+//  }
+//  .articleAuthorSpecialItemImg {
+//    margin-bottom: 5px;
+//    img {
+//      width: 100%;
+//    }
+//  }
+//  .articleAuthorSpecialItemContent {
+//    margin-top: 10px;
+//    span {
+//      font-size: $font--12;
+//      font-weight: 500;
+//      letter-spacing: 0.2px;
+//      text-align: center;
+//      color: $color--7a7a7a;
+//      border: 1px solid $color--7a7a7a;
+//      padding: 2px 10px;
+//      border-radius: 4px;
+//    }
+//    p {
+//      font-size: $font--18;
+//      font-weight: bold;
+//      line-height: 1.33;
+//      letter-spacing: 0.5px;
+//      color: $color--121212;
+//      padding-top: 8px;
+//      padding-bottom: 20px;
+//    }
+//  }
+//}
+//
+//.articleAuthorSearchTitle {
+//  border-bottom: 1px solid $color--EEEEEE;
+//  .searchTitle {
+//    font-size: $font--12;
+//    font-weight: bold;
+//    line-height: 1.67;
+//    letter-spacing: 0.2px;
+//    color: $color--121212;
+//    background-color: rgba(147, 126, 40, 0.05);
+//    padding-top: 5px;
+//    padding-bottom: 7px;
+//  }
+//  .searchTitleLeft, .searchTitleRight{
+//    width: 50%;
+//    float: left;
+//    background-color: $color--FFFFFF;
+//  }
+//  .searchTitleLeft {
+//    .panelIndent {
+//      margin-right: 8px;
+//    }
+//  }
+//  .searchTitleRight {
+//    .panelIndent {
+//      margin-left: 8px;  }
+//  }
+//}
+//ul.searchTitleList {
+//  padding-left: 0;
+//  margin-bottom: 0;
+//  list-style: none;
+//  li {
+//    padding: 0;
+//    border-bottom: 1px solid $color--EEEEEE;
+//    a {
+//      display: block;
+//      font-size: $font--15;
+//      font-weight: 500;
+//      line-height: 1.4;
+//      letter-spacing: 0.2px;
+//      color: $color--242424;
+//      padding: 10px 0;
+//    }
+//  }
+//  li:last-child {
+//    border: none;
+//  }
+//}
+//
+//.articleAuthorSearchtHeader {
+//  background-color: rgba(147, 126, 40, 0.05);
+//  clear: both;
+//  h3 {
+//    font-size: $font--12;
+//    font-weight: bold;
+//    line-height: 1.67;
+//    letter-spacing: 0.2px;
+//    color: $color--121212;
+//    display: block;
+//    padding: 5px 0;
+//    margin: 0;
+//    margin-left: 18px;
+//    position: relative;
+//    i.iconNewsFix, i.iconSerialization, i.iconCommentCollapse, i.iconWhitePen{
+//      position: absolute;
+//      top:10px;
+//      left: -18px;
+//    }
+//  }
+//}
+//
+//.articleAuthorSearchList {
+//  li {
+//    &:last-child {
+//      border-bottom: 0px;
+//    }
+//  }
+//}
+//
+//.articleSearch {
+//  margin-top: 30px;
+//  margin-bottom: 20px;
+//}
+//.articleSearchWrapper {
+//  display: flex;
+//  flex-wrap: wrap;
+//  .formInput {
+//    flex-grow: 1;
+//    background-image: url('../../../../images/aria/2019/sp/iconSearch.png');
+//    background-repeat: no-repeat;
+//    background-position: 8px 10px;
+//    padding-left: 30px;
+//  }
+//}
+
+

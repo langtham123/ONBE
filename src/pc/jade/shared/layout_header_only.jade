@@ -1,0 +1,19 @@
+doctype html
+html(lang='ja')
+	include header.jade
+	body
+		header.headerLogoOnly
+			.headerBlock
+				.siteLogo
+					a(href='/')
+						img(src='../../images/onb/2019/310_logo_pc.svg', alt='')
+		.content
+			block content
+		footer.mainFooter.expansion
+			.mainFooterContainer
+				.corpLogoSmall
+					img(src='../../images/onb/2019/logoFooterSmall.png', alt='')
+				p ©2018 Nikkei Business Publications, Inc. All rights reserved.
+		script(src='../../js/bpcommon/jquery-3.x-min.js')
+		block lib_js
+		script(src='../../js/onb/2019/common.js')

@@ -1,0 +1,76 @@
+.btnFollow {
+	width: 176px;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid #006eaf;
+	background-color: #ffffff;
+	font-size: 15px;
+	color: #006eaf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	&:before {
+		content: url(/images/v1/plusBlue.svg);
+		width: 15px;
+		height: 12px;
+		margin-right: 7px;
+		position: relative;
+		display: inline-block;
+	}
+	&:hover {
+		border: 2px solid #006eaf;
+	}
+}
+
+.btnFollowing {
+	width: 180px;
+	height: 24px;
+	border-radius: 4px;
+	background-color: #006eaf;
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:before {
+		content: url(/images/v1/check.svg);
+		width: 10px;
+		height: 10px;
+		margin-right: 7px;
+		position: relative;
+		top: -2px;
+		display: inline-block;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.btnSeeMore {
+	width: 160px;
+	height: 32px;
+	border-radius: 4px;
+	border: solid 1px #006eaf;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #006eaf;
+	position: relative;
+	margin: 0 auto;
+	&:after {
+		content: url(/images/v1/arrowDown.svg);
+		width: 14px;
+		height: 8px;
+		margin-left: 24px;
+		position: absolute;
+		top: 7px;
+		right: 12px;
+	}
+	&:hover {
+		border: 2px solid #006eaf;
+	}
+}

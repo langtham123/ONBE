@@ -1,0 +1,20 @@
+extends ../shared/layout_blank.jade
+
+block lib_css
+
+block lib_js
+
+block title
+	title 399_コメント　通知・光るコメントから遷移した時
+
+
+block content
+	article
+		.leafContainer
+			.articleBody
+				p.note399.panelIndent 日経ビジネス2018年8月27日号 28～35ページより
+				include ../shared/leaf_content/_leaf_tag
+			section.panelIndent
+				include ../shared/leaf_content/comment_theme/_comment_list_2
+			section.panelIndent
+				include ../shared/leaf_content/_progress_bar

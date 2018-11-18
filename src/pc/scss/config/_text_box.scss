@@ -1,0 +1,21 @@
+%cssTextBoxLead {
+	margin: 0;
+	border: solid 1px $color--E6001E;
+	padding: 13px 20px;
+	font-size: $font--15;
+	font-weight: bold;
+	line-height: 1.67;
+	letter-spacing: 0.2px;
+	color: $color--242424;
+	position: relative;
+	&:after{
+		position: absolute;
+		content: '';
+		height: 12px;
+		width: 12px;
+		background-color: $color--E6001E;
+		left: 0px;
+		top: 0;
+	}
+}
+

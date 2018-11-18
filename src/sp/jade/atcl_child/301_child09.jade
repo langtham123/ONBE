@@ -1,0 +1,55 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンク
+
+block content
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/duplicate/_header
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/_description_text
+				
+				include ../shared/leaf_content/duplicate/_main_text
+				include ../shared/leaf_content/read_more/_read_more_login
+				include ../shared/leaf_content/_text_end
+				include ../shared/leaf_content/_leaf_tag
+			section
+				.panelIndent
+					include ../shared/leaf_content/_comment_signup
+			section
+				- var title = 'ログイン前・非会員・ゲスト'
+				include ../shared/component/_related_forum_just_title
+				.panelIndent
+					- var title = 'この記事は会員登録で続きをご覧いただけます'
+					include ../shared/leaf_content/read_more/_read_more_login_none_cover
+			section
+				- var title = 'ログイン済み （非会員）'
+				include ../shared/component/_related_forum_just_title
+				.panelIndent
+					- var title = 'この記事は会員登録で続きをご覧いただけます';
+					include ../shared/leaf_content/read_more/_read_more_login_none_cover
+			section
+				- var title = 'ログイン済み （日経ビジネス無料会員）'
+				include ../shared/component/_related_forum_just_title
+				.panelIndent
+					include ../shared/leaf_content/read_more/_read_more_login_none_cover_cus
+			section
+				- var title = 'ログイン済み （日経ビジネス無料会員）0本'
+				include ../shared/component/_related_forum_just_title
+				.panelIndent
+					include ../shared/leaf_content/read_more/_read_more_login_none_cover_cus_0
+
+			include ../shared/leaf_content/popup/_pop_up_09
+	include ../shared/leaf_content/component/_share_button

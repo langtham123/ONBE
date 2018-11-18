@@ -1,0 +1,36 @@
+#wrapper > header {
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+header {
+	.headerTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 68px;
+	}
+	.siteLogo {
+		display: inline-block;
+		a:hover {
+			opacity: 0.4;
+		}
+	}
+
+	.userSetting a{
+		display: inline-block;
+		width: 128px;
+		height: 40px;
+		border-radius: 2px;
+		border: 1px solid #eeeeee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 15px;
+		letter-spacing: 0.4px;
+		color: #006eaf;
+		box-sizing: border-box;
+		&:hover {
+			border: 2px solid #eeeeee;
+			text-decoration: underline;
+		}
+	}
+}

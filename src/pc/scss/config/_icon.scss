@@ -1,0 +1,49 @@
+$list_header_icon: double_comment iconComment iconSearch iconLike iconReply iconStarRed iconFill iconDisLike iconFb iconTw iconIn iconClose incon_close_20x20 iconLockClose iconLockOpen iconchart iconReplyDown iconOvalMovie iconMovie viewerIcon iconLoading_32x32 iconClose_18x18 iconSearchRed;
+$list_header_icon_svg: iconFb iconTw iconIn iconNew iconFeature iconRaise iconSeminar;
+.iconSvg {
+	display: inline-block;
+	@each $item in $list_header_icon_svg {
+		&.#{$item} {
+			background: url("../../../images/onb/2019/#{$item}.svg") no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+.icon {
+  	display: inline-block;
+ 	@each $item in $list_header_icon {
+    	&.#{$item} {
+	      	background: url("../../../images/onb/2019/#{$item}.png") no-repeat;
+	      	width: 20px;
+	      	height: 20px;
+    	}
+  	}
+  	&.viewer {
+		background: url("../../../images/onb/2019/viewer.png") no-repeat;
+		background-size: 100%;
+		width: 22px;
+  		height: 20px;
+	}
+	&.iconRightArrow {
+		background: url("../../../images/onb/2019/arrowAuthorPopup.png") no-repeat;
+		background-size: 100%;
+		width: 14px;
+		height: 12px;
+		position: relative;
+		top: -2px;
+	}
+	&.iconLeftArrow {
+		background: url("../../../images/onb/2019/arrowAuthorPopup.png") no-repeat;
+		background-size: 100%;
+		width: 14px;
+		height: 12px;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		position: relative;
+		top: -2px;
+	}
+}

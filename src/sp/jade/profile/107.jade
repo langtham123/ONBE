@@ -1,0 +1,112 @@
+extends ../shared/layout_107.jade
+
+block lib_css
+	link(href='/css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='/js/onb/2019/lib/jquery.simple-popup.min.js')
+
+block title
+	title SP_107_公開プロフィール
+
+block content
+	article.panelIndent
+		header
+			.profileHeader
+				.profileHeaderLeft
+					.profileHeaderImg
+						.avatarCicrle.sizeSeventyTwo
+							img(src='/images/v1/sp/Oval.png', alt='')
+					.profileHeaderInfo
+						h1.profileHeaderName 吉田 次郎
+						h2.profileHeaderAddr 日本経済新聞社記者
+						.profileHeaderBadge
+							i.icon.badge
+							i.icon.badgeA
+							i.icon.badgeB
+							i.icon.badgeC
+							i.icon.badgeD
+							i.icon.badgeE
+					a(href='#').profileHeaderViolationModal
+						span.profileHeaderViolationModalContent
+				.profileHeaderRight
+					
+					.profileHeaderFollow
+						a(href='#').profileHeaderNumberFollow 325人がフォロー中
+						a(href='#').btnFollow ユーザーをフォロー
+
+		.articleBody
+			p 1989年京大卒、同年日本経済新聞社入社。流通、農政、行政改革、保険会社、中国経済などの取材を経て2007年より現職。2003年に「生保予定利率下げ問題」の一連の報道で新聞協会賞受賞。1989年京大卒、同年日本経済新聞社入社。流通、農政、行政改革、保険会社、中国経済などの取材を経て2007年より現職。2003年に「生保予定利率下げ問題」の一連の報道で新聞協会賞受賞。
+		.articleList
+			h3.numberPeopleFollow 325人がフォロー中
+			ul.peopleFollow
+				li.peopleFollowItem
+					a(href='#')
+						.peopleFollowItemContent
+							.peopleFollowItemContentImg
+								.avatarCicrle.sizeForty
+									img(src='/images/v1/sp/profile-1.png', alt='')
+							.peopleFollowItemContentInfo
+								.peopleFollowItemContentName 
+									| 谷口 徹也
+									i.icon.badgeA
+									i.icon.badgeB
+								.peopleFollowItemContentAddr 日経ビジネス編集長
+					a(href='#').btnFollow ユーザーをフォロー
+				li.peopleFollowItem
+					a(href='#')
+						.peopleFollowItemContent
+							.peopleFollowItemContentImg
+								.avatarCicrle.sizeForty
+									img(src='/images/v1/sp/profile.png', alt='')
+							.peopleFollowItemContentInfo
+								.peopleFollowItemContentName 
+									| フェルディナント・ヤマグチ
+								.peopleFollowItemContentAddr 日経ビジネス編集長
+					a(href='#').btnFollowing ユーザーフォロー中
+				li.peopleFollowItem
+					.peopleFollowItemContent
+						a(href='#')
+							.peopleFollowItemContentImg
+								.avatarCicrle.sizeForty
+									img(src='/images/v1/sp/profile-1.png', alt='')
+							.peopleFollowItemContentInfo
+								.peopleFollowItemContentName 
+									| 谷口 徹也
+									i.icon.badgeC
+									i.icon.badgeD
+									i.icon.badgeE
+								.peopleFollowItemContentAddr 日経ビジネス編集長
+					a(href='#').btnFollow ユーザーをフォロー
+				li.peopleFollowItem
+					a(href='#')
+						.peopleFollowItemContent
+							.peopleFollowItemContentImg
+								.avatarCicrle.sizeForty
+									img(src='/images/v1/sp/profileDefault.png', alt='')
+							.peopleFollowItemContentInfo
+								.peopleFollowItemContentName 
+									| フェルディナント・ヤマグチ
+									i.icon.badge
+									i.icon.badgeA
+									i.icon.badgeB
+									i.icon.badgeC
+									i.icon.badgeD
+									i.icon.badgeE
+								.peopleFollowItemContentAddr 日経ビジネス編集長
+					a(href='#').btnFollow ユーザーをフォロー
+				li.peopleFollowItem
+					a(href='#')
+						.peopleFollowItemContent
+							.peopleFollowItemContentImg
+								.avatarCicrle.sizeForty
+									img(src='/images/v1/sp/profile-1.png', alt='')
+							.peopleFollowItemContentInfo
+								.peopleFollowItemContentName 
+									| 谷口 徹也
+									i.icon.badge
+								.peopleFollowItemContentAddr 日経ビジネス編集長
+					a(href='#').btnFollowing ユーザーフォロー中
+			a(href='#').btnSeeMore もっと見る
+	.panelIndent
+		include popup/popup_107

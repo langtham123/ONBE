@@ -1,0 +1,35 @@
+%popupBottomClose {
+	top: auto;
+	bottom: -70px;
+	height: 56px;
+	width: 56px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	&:after {
+		content: '閉じる';
+		position: absolute;
+		right: 13px;
+		top: 35px;
+		font-size: 9px;
+		font-weight: bold;
+		letter-spacing: 0.2px;
+		text-align: right;
+		color: #666666;
+	}
+	&:before {
+		color: #666666 !important;
+		font-size: 28px;
+		right: 11px;
+		top: 4px;
+	}
+}
+
+.popupShareOne + .close,
+.popupShareTwo + .close,
+.popupShareThree + .close,
+.popupShareFour + .close,
+.popupShareFive + .close,
+.popupShareSix + .close, 
+.popupShareSeven + .close {
+  @extend %popupBottomClose;
+}

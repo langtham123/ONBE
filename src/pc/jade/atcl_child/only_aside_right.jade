@@ -1,0 +1,79 @@
+extends ../shared/layout_300.jade
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンクPC
+
+
+block content
+	article
+
+		header
+			.articleHeaderTop
+
+		.articleList
+
+			section
+
+			section
+
+			section
+
+	include ../shared/_aside_right
+		block aside_right
+			- var img_name = 'ADRectangle.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				- var title = 'アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_ranking
+				- var url = '#', text = '別のランキング'
+				include ../shared/aside_right/_other_link
+			
+			- var img_name = 'ADRectangle2.png'
+			include ../shared/aside_right/_ad_rectangle
+			
+			section
+				- var title = '有料アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_paid_ranking
+				- var url = '#', text = '6位以下・別のランキング'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ書籍・ムック'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_book
+				- var url = '#', text = '書籍・ムック一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめセミナー'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_seminar
+				- var url = '#', text = '開催セミナー一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ情報'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_info
+
+			section
+				include ../shared/aside_right/_comment
+				- var url = '#', text = '光るコメント一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = '記事を探す'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_search_box
+
+			- var img_name = 'ADRectangle3.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				include ../shared/aside_right/_business_trend
+
+			section
+				include ../shared/aside_right/_dag_ad

@@ -1,0 +1,385 @@
+.leafProfileContainer, .leafPostContainer {
+	background-color: $color--FFFFFF;
+}
+
+.leafProfileDescription, .leafPostDescription {
+	clear: both;
+	margin: 0px;
+	font-size: $font--17;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	color: $color--242424;
+	p {
+		margin: 0px;
+		line-height: 1.76;
+	}
+	span {
+		font-size: $font--14;
+		display: block;
+		padding-top: 12px;
+	}
+}
+
+.leafProfileReference {
+	border-bottom: 1px solid $color--EEEEEE;
+	padding-bottom: 40px;
+	.leafProfileHeader {
+		padding-bottom: 20px;
+		.subTitle {
+			margin: 40px 0px 20px 0px;
+		}
+		.leafProfile {
+			.profileInfo {
+				h5 {
+					display: inline-block;
+				}
+				.numberImages {
+					img {
+						width: 14px;
+						height: 14px;
+						background-size: 100% 100%;
+					}
+					position: relative;
+					bottom: 4px;
+				}
+			}
+			.profilePostList {
+				position: absolute;
+				right: 0px;
+				bottom: 5px;
+				font-size: $font--15;
+				font-weight: 500;
+				color: $color--E6001E;
+			}
+		}
+	}
+	.leafProfileDescription {
+		font-size: $font--15;
+		span {
+			font-size: $font--12;
+			padding-top: 2px;
+		}
+	}
+}
+
+.leafProfileHeader {
+	padding-bottom: 10px;
+	.subTitle {
+		font-size: $font--18;
+		line-height: 1;
+		letter-spacing: 0.2px;
+		color: #242424;
+		font-weight: bold;
+		margin: 0px 0px 40px 0px;
+	}
+	.leafProfile {
+		display: flex;
+		position: relative;
+		.profileAvatar {
+			padding-right: 20px;
+		}
+		.profileInfo {
+			flex-grow: 1;
+			//padding-top: 5px;
+			h5 {
+				line-height: 1.2;
+				font-size: $font--24;
+				font-weight: bold;
+				color: $color--242424;
+				margin: 0px;
+				position: relative;
+			}
+			.numberImages {
+				position: absolute;
+				bottom: 2px;
+				cursor: pointer;
+				display: inline-block;
+				font-weight: 500;
+				color: $color--E6001E;
+				margin-left: 10px;
+				span {
+					font-size: $font--14;
+				}
+				img {
+					margin-left: 6px;
+				}
+			}
+			span {
+				font-size: $font--12;
+				font-weight: 500;
+			}
+			p {
+				font-size: $font--12;
+				font-weight: 500;
+				letter-spacing: 0.2px;
+				color: $color--666666;
+				margin: 0px;
+				line-height: 2;
+			}
+		}
+		.profileFollow {
+			font-size: $font--14;
+			font-weight: 500;
+			letter-spacing: 0.2px;
+			line-height: 2.5;
+			//padding-top: 5px;
+			span {
+				color: $color--666666;
+				margin-right: 20px;
+			}
+			a {
+				position: relative;
+				border-radius: 4px;
+				border: 1px solid $color--E6001E;
+				color: $color--E6001E;
+				padding: 8px 12px 8px 32px;
+				img {
+					position: absolute;
+					left: 12px;
+					top: 10px;
+				}
+			}
+		}
+	}
+}
+
+.commentProfileList{
+	h5{
+		font-size: $font--18;
+		font-weight: bold;
+		line-height: 1.44;
+		letter-spacing: 0.2px;
+		color: $color--000000;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	ul {
+		li {
+			border-bottom: 1px solid $color--EEEEEE;
+			padding: 15px 0px;
+			margin-bottom: 15px;
+			overflow: hidden;
+			&:hover {
+				.commentProfileTitle {
+					color: $color--E6001E;
+				}
+			}
+			.commentProfileTitle {
+				font-size: $font--17;
+				font-weight: bold;
+				line-height: 1.29;
+				letter-spacing: 0.2px;
+				color: $color--242424;
+				padding-bottom: 20px;
+				span {
+					display: block;
+					font-size: $font--14;
+					font-weight: 500;
+					line-height: 1;
+					letter-spacing: 0.2px;
+					color: $color--666666;
+					padding-bottom: 5px;
+				}
+			}
+			.commentProfileInfo {
+				display: flex;
+				.commentProfileInfoRight {
+					margin-left: 20px;
+					font-size: $font--14;
+					font-weight: 500;
+					line-height: 1.57;
+					letter-spacing: 0.2px;
+					color: $color--242424;
+					.commentProfileInfoContent {
+						height: 42px;
+						width: 100%;
+						display: -webkit-box;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					.commentProfileInfoIcon {
+						display: block;
+						font-size: $font--14;
+						font-weight: 500;
+						line-height: 1;
+						letter-spacing: 0.2px;
+						color: $color--666666;
+						margin-top: 5px;
+						span {
+							margin-left: 20px;
+							a{
+								.iconLike{
+									width: 14px;
+									height: 14px;
+									background-size: 100% 100%;
+									margin-right: 2px;
+								}
+							}
+						}
+						.icon.iconLike {
+						    width: 16px;
+						    height: 16px;
+						    background-size: 100%;
+						    margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.commentContent1{
+		ul{
+			li{
+				.itemComment {
+					display: flex;
+					margin-top: 34px;
+					.commentItemLeft{
+						position: relative;
+						.iconFill{
+							position: absolute;
+							width: 14px;
+							height: 14px;
+							background-size: 100% 100%;
+							right: -5px;
+							top: 21px;
+						}
+					}
+					.commentItemRight{
+						margin-left: 10px;
+						margin-right: 15px;
+						a{
+
+						}
+						.commentItemRightContent {
+							max-height: 150px;
+							overflow: hidden;
+							position: relative;
+							&:after {
+								content: "";
+								position: absolute;
+								-webkit-box-shadow: inset -1px -10px 10px -5px rgba(255, 255, 255, 1);
+								-moz-box-shadow: inset -1px -10px 10px -5px rgba(255, 255, 255, 1);
+								box-shadow: inset -1px -10px 10px -5px rgba(255, 255, 255, 1);
+								top: 0;
+								bottom: 0;
+								width: 100%;
+							}
+							&.on{
+								max-height: auto;
+								overflow: auto;
+								&:after {
+									content: "";
+									position: static;
+									-webkit-box-shadow: none;
+									-moz-box-shadow:none;
+									box-shadow: none;
+								}
+							}
+						}
+						p {
+							line-height: 1.71;
+
+						}
+
+						.commentIcon{
+							color: $color--7a7a7a;
+							margin-top: 12px;
+							font-size: $font--13;
+							span.commentlike{
+								margin-left: 20px;
+								a{
+									.iconLike{
+										width: 14px;
+										height: 14px;
+										background-size: 100% 100%;
+									}
+								}
+							}
+							span.commentReply{
+								margin-left: 20px;
+							}
+							span.commentReadmore{
+								float: right;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.leafPostHeader {
+	display: flex;
+	padding-bottom: 30px;
+	.leafPostHeaderImg {
+		position: relative;
+		span {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			font-size: $font--17;
+			font-weight: bold;
+			line-height: 1.24;
+			letter-spacing: 0.2px;
+			color: $color--FFFFFF;
+			background-color: $color--242424;
+			padding: 5px 11px;
+		}
+		.raise {
+			background-color: $color--E6001E;
+			opacity: 0.9;
+		}
+	}
+	.leafPostHeaderInfo {
+		margin-left: 30px;
+		width: 100%;
+		h3 {
+			display: flex;
+			font-size: $font--32;
+			font-weight: bold;
+			line-height: 1.38;
+			letter-spacing: 0.3px;
+			color: $color--242424;
+			margin-top: 0px;
+			margin-bottom: 15px;
+		}
+		h3.greenTitle {
+			margin-left: -40px;
+			display: flex;
+			padding: 4px 30px;
+			background-color: rgba(97, 200, 124, 0.9);
+			color: $color--FFFFFF;
+			position: relative;
+			top: 10px;
+			margin-bottom: 30px;
+		}
+		.leafHeader {
+			border: none;
+			.mainHeader {
+				margin: 0px;
+			}
+		}
+		.leafProfileHeader {
+			border-bottom: 1px solid $color--EAEAEA;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			.leafProfile {
+				display: block;
+				.profileFollow {
+					display: flex;
+					justify-content: space-between;
+					span {
+						display: block;
+					}
+					div {
+						display: block;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+}

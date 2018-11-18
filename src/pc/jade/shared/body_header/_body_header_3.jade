@@ -1,0 +1,49 @@
+- var arrHeaderMenu={'iconNew':'新着', 'iconFeature':'特集', 'iconRaise':'Raise','iconSeminar':'ゼミナール'};
+header
+    .headerContainer
+        .headerBlock
+            .contentLeft
+                nav.localNavi
+                    a.burgerMenuToggle( href='#localNaviMenu')
+                        i.icon.iconBarRed
+                        span
+                            | メニュー
+                    block burgerMenu
+                        include ../burger_menu/_menu_02
+
+                section.searchBox
+                    form
+                        .inputWithIcon
+                            input(type='text',placeholder='連載名・キーワードなどで検索')
+                            i.icon.iconSearchRed
+                        .headerSearchList
+                            p キャンペーンタグ
+                            - var keywords = ["#政治・国際", "#情報・通信",'#製造','#スキル・ライフ','#小売り','#カテゴリタグ','#創業家','#ウォルマート','#AI','#V字回復','#サイバーセキュリティー','#デモ','#トランプ','#創業家','#DeNA','#満員電車','#ウォルマート','#デザイン思考','#新規参入'];
+                            ul
+                                for key in keywords
+                                    li
+                                        a(href='#')= key
+            .siteLogo
+                a(href='/')
+                        img(src='../../images/onb/2019/logo_pc.svg', alt='')
+            .loginBox
+                ul.menuLogin
+                    each val, index in arrHeaderMenu
+                        li
+                            a(href='#')
+                                .navButtonContent
+                                    i.iconSvg(class=index)
+                                    =val
+                    li.avatarUser
+                        a(href='#')
+                            .navButtonContent
+                                .notificationAlert
+                                .avatarCicrle.sizeThirtySix
+                                    img(src='../../images/onb/2019/oval00.png', alt='')
+
+            
+
+
+
+
+

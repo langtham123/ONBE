@@ -1,0 +1,47 @@
+section.onlineSeminar
+    - var title = 'オンラインゼミナール'
+        include ../../shared/component/_title_box
+        span.besideTitleBox 仮）オンラインで身につける経済の最新知識
+
+    - var onlineSeminarKeywords = ["#新市場", "#ウォルマート",'#AI'];
+
+    ul.listKeywords
+        for key in onlineSeminarKeywords
+            li
+                a(href='#')= key
+
+    ul.listOnlineSeminar
+        - for (var i = 0; i < 3; ++i)
+            li
+                a(href='#')
+                    .itemHeader
+                        i.icon.iconOvalMovie
+                        span.time 25:00
+                        img(src='../../images/onb/2019/img_2_big.png',alt='')
+                        p.subTitle 連載タイトルが入ります。連載タイ…
+                        p.title パーソナライズサービスを成功させたネスレのイノ…
+                    .itemContent
+                        .itemLeft
+                            .avatarCicrle.sizeThirtyTwo
+                                img(src='../../images/onb/2019/Oval15.png',alt='')
+                        .itemRight
+                            p.itemTitle 長谷川 一旗
+                            p.itemSub 東北大学教授
+                            span #新市場
+                            span #AI
+
+    - var articleItems2 = []
+    - articleItems2.push({category:'連載タイトル',title:'記事タイトルが入ります。記事タイトルが', movie:true})
+    - articleItems2.push({category:'連載タイトル',title:'記事タイトルが入ります。記事タイトルが'})
+    - articleItems2.push({category:'連載タイトル',title:'記事タイトルが入ります。記事タイトルが', movie:true})
+    - articleItems2.push({category:'連載タイトル',title:'記事タイトルが入ります。記事タイトルが'})
+    ul.listArticleSecond
+        for item in articleItems2
+            li
+                a(href='#')
+                    p.category= item.category
+                    p.title= item.title
+                        -if(item.movie)
+                            i.icon.iconMovie
+
+    a.newArticleList(href='#') 講座一覧 &gt;

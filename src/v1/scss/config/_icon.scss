@@ -1,0 +1,12 @@
+
+$list_svg_icon: badge badgeA badgeB badgeC badgeD badgeE check;
+.icon {
+	display: inline-block;
+	@each $item in $list_svg_icon {
+		&.#{$item} {
+			background: url("/images/v1/#{$item}.svg") no-repeat;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

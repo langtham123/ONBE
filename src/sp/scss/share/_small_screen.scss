@@ -1,0 +1,52 @@
+
+%cssSmallScreenMode {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.smallScreenMode {
+
+  section.myPage {
+    .tabWrapper {
+      .tabContent {
+        ul.tabItem {
+          li {
+            &.clip {
+
+            }
+            .itemNotice {
+
+            }
+            .item {
+
+              p {
+                &.date {
+                  right: 8px;
+                }
+              }
+              .itemDate {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #wrapper {
+    header {
+      nav.localNavi {
+        .burgerMenu {
+          .burgerMenuHead {
+            @extend %cssSmallScreenMode;
+            width: 96%;
+          }
+          .burgerMenuHead03 {
+            @extend %cssSmallScreenMode;
+            width: 96%;
+          }
+        }
+      }
+    }
+
+  }
+}

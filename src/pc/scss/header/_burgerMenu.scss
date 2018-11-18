@@ -1,0 +1,263 @@
+@import "../config/color";
+@import "../config/font_size";
+
+%cssBugerMenu {
+  .burgerMenu {
+    &.on {
+      left: 0;
+      -webkit-box-shadow: 4px 0 12px 0 rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 4px 0 12px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 0 12px 0 rgba(0, 0, 0, 0.1);
+      transition: all linear 0.2s;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+    }
+    position: fixed;
+    width: 360px;
+    top: 0;
+    bottom: 0;
+    left: -360px;
+    z-index: 9999;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    background: $color--FFFFFF;
+    a {
+      &.close {
+        float: left;
+        width: 88%;
+        text-align: left;
+        margin: 15px;
+        padding: 5px;
+        line-height: 0;
+        i.icon.iconClose {
+          background-size: 100%;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .burgerMenuHead {
+      margin-left: 64px;
+      margin-top: 57px;
+      text-align: left;
+      .burgerMenuHeadLeft {
+        float: left;
+        width: auto;
+        display: flex;
+        .burgerMenuHeadLeftImg {
+          height: 56px;
+        }
+        .avatarCicrle {
+          margin-right: 10px;
+        }
+        .burgerMenuHeadeftLeftContent {
+          height: 56px;
+          p {
+            line-height: 1em;
+            margin-top: 0;
+            margin-bottom: 0;
+            &.textAuthorTitle {
+              color: $color--666666;
+            }
+          }
+          p.textAuthorName {
+            font-size: $font--17;
+            line-height: 1.5em;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            span {
+              font-size: $font--14;
+              font-weight: normal;
+              margin-left: 4px;
+            }
+          }
+          p.displayName {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+      .burgerMenuHeadRight {
+        float: right;
+        margin-top: 15px;
+        margin-right: 20px;
+        a {
+          &.btn {
+            width: 68px;
+            height: 30px;
+            border: 1px solid $color--dddddd;
+            font-size: $font--14;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            color: $color--E6001E;
+            font-weight: 500;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          img {
+            width: 12px;
+            height: 12px;
+            margin-left: 5px;
+          }
+        }
+      }
+      a.btnApplication {
+        clear: both;
+        float: left;
+        width: 276px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $font--14;
+        text-align: center;
+        color: $color--FFFFFF;
+        border-radius: 2px;
+        background-color: #5bb7a6;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#5bb7a6), to(#169b82));
+        background-image: -webkit-linear-gradient(top, #5bb7a6, #169b82);
+        background-image: -moz-linear-gradient(top, #5bb7a6, #169b82);
+        background-image: -ms-linear-gradient(top, #5bb7a6, #169b82);
+        background-image: -o-linear-gradient(top, #5bb7a6, #169b82);
+        background-image: linear-gradient(to right, #5bb7a6, #169b82), linear-gradient(276deg, rgba(255, 255, 255, 0), $color--FFFFFF);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#5bb7a6, endColorstr=#169b82);
+        margin-top: 14px;
+        margin-bottom: 20px;
+        &:hover {
+          background-color: #FFFFFF;
+          border: 2px solid #5bb7a6;
+          color: #5bb7a6;
+          background-image: none;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .burgerMenuHead03 {
+      width: 100%;
+      clear: both;
+      float: right;
+      text-align: right;
+      margin-top: 23px;
+      margin-bottom: 30px;
+      a {
+        &.btnLogin {
+          @extend %cssbtnSmall;
+          @extend %cssbtnLogin;
+        }
+
+        &.btnApplication {
+          @extend %cssbtnSmall;
+          @extend %cssbtnApplication;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    .burgerMenuContent {
+      clear: both;
+      border-top: 1px solid $color--EEEEEE;
+      width: 100%;
+      float: left;
+      margin-top: 34px;
+      &.burgerMenuContent2 {
+        margin-top: 0;
+      }
+      ul {
+        &.listFirst {
+          margin-left: 64px;
+          li {
+            border-bottom: 1px solid $color--EEEEEE;
+            text-align: left;
+            a {
+              display: block;
+              height: 42px;
+              line-height: 42px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            &:hover {
+              color: $color--E6001E;
+            }
+          }
+        }
+        &.listSecond {
+          li {
+            border-bottom: 1px solid $color--EEEEEE;
+            border-top: 1px solid $color--EEEEEE;
+            a {
+              margin-left: 64px;
+              height: 62px;
+              font-size: 14px;
+              font-weight: bold;
+              display: flex;
+              line-height: 64px;
+              img {
+                width: 32px;
+                height: 32px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 10px;
+              }
+              &:hover {
+                color: $color--E6001E;
+              }
+            }
+          }
+        }
+        &.listThird {
+          display: flex;
+          margin-left: 64px;
+          margin-top: 16px;
+          li {
+            display: flex;
+            align-items: center;
+            a {
+              i.iconFb {
+                background-size: 100%;
+                width: 16.8px;
+                height: 32px;
+              }
+              i.iconTw {
+                background-size: 100%;
+                width: 32.5px;
+                height: 26px;
+                margin-left: 59.2px;
+              }
+              i.iconIn {
+                background-size: 100%;
+                width: 29.6px;
+                height: 29.6px;
+                margin-left: 52.5px;
+              }
+            }
+          }
+        }
+        &.listLast {
+          margin-left: 64px;
+          margin-top: 20px;
+          margin-bottom: 74px;
+          li {
+            text-align: left;
+            a {
+              font-size: 15px;
+              display: block;
+              width: 110px;
+              line-height: 30px;
+              text-align: center;
+              color: $color--666666;
+              font-weight: 500;
+              border: 1px solid $color--dddddd;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

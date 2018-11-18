@@ -1,0 +1,87 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+
+block title
+	title 402_子記事一覧_連載_PC
+
+block content
+	- var crumbs = ["パンくず", "パンくず"];
+	include ../shared/component/_crumb
+	article
+		header.leafPostHeader
+			include ../shared/leaf_post/_header_pc
+		.articleBody.leafPostDescription
+			include ../shared/leaf_post/_description_text
+		.articleList
+			section
+				include ../shared/component/_creation_list_2
+			include ../shared/component/_pagination
+			section
+				include ../shared/leaf_post/_reference_profile
+
+	include ../shared/_aside_right
+		block aside_right
+			- var img_name = 'ADRectangle.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				- var title = 'アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_ranking
+				- var url = '#', text = '別のランキング'
+				include ../shared/aside_right/_other_link
+			
+			- var img_name = 'ADRectangle2.png'
+			include ../shared/aside_right/_ad_rectangle
+			
+			section
+				- var title = '有料アクセスランキング'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_tab_paid_ranking
+				- var url = '#', text = '6位以下・別のランキング'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ書籍・ムック'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_book
+				- var url = '#', text = '書籍・ムック一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめセミナー'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_seminar
+				- var url = '#', text = '開催セミナー一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = 'おすすめ情報'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_recommend_info
+
+			section
+				include ../shared/aside_right/_comment
+				- var url = '#', text = '光るコメント一覧'
+				include ../shared/aside_right/_other_link
+
+			section
+				- var title = '記事を探す'
+				include ../shared/aside_right/_sub_col_head
+				include ../shared/aside_right/_search_box
+
+			- var img_name = 'ADRectangle3.png'
+			include ../shared/aside_right/_ad_rectangle
+
+			section
+				include ../shared/aside_right/_business_trend
+
+			section
+				include ../shared/aside_right/_dag_ad

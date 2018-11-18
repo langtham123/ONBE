@@ -1,0 +1,17 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+
+block title
+	title 106_クリップした記事一覧
+
+block content
+	article
+		include ../shared/105_contents/_header_105
+		.articleList
+			section.myPage
+				include ../shared/105_contents/_list_2

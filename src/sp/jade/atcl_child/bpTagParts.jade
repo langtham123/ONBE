@@ -1,0 +1,28 @@
+extends ../shared/layout_300.jade
+
+block lib_css
+	link(href='../../css/onb/2019/lib/jquery.simple-popup.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/owl.carousel.min.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick.css', rel='stylesheet')
+	link(href='../../css/onb/2019/lib/slick/slick-theme.css', rel='stylesheet')
+
+block lib_js
+	script(src='../../js/onb/2019/lib/autosize.min.js')
+	script(src='../../js/onb/2019/lib/simplebar.js')
+	script(src='../../js/onb/2019/lib/jquery.simple-popup.min.js')
+	script(src='../../js/onb/2019/lib/owl.carousel.min.js')
+	script(src='../../js/onb/2019/lib/slick.min.js')
+	script(src='../../js/onb/2019/lib/background-blur.min.js')
+
+block title
+	title 301_子記事_02ログイン済み有料会員 特集＋エンベット・Raise記事リンク
+
+block content
+	article
+		.leafContainer
+			header.leafHeader
+				include ../shared/leaf_content/duplicate/_header_2
+			.articleBody
+				include ../shared/leaf_content/_number_count
+				include ../shared/leaf_content/_description_text
+				include ../shared/leaf_content/_article
